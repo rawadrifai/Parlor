@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>590727901405-5to4suoshpi9293ijitlq5ko7lnsck1u.apps.googleusercontent.com</string>
+	<string>590727901405-o5kp3t15kiihkvrmrmf0cq77s83tpog3.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.590727901405-5to4suoshpi9293ijitlq5ko7lnsck1u</string>
+	<string>com.googleusercontent.apps.590727901405-o5kp3t15kiihkvrmrmf0cq77s83tpog3</string>
 	<key>API_KEY</key>
 	<string>AIzaSyAX_akPnQ2tWKwX8iH6EC3pOscDcYzIlV4</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,23 +17,23 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>rifai.prossimo.ios</string>
+	<string>DUT56SJCSN.com.parlorme</string>
 	<key>PROJECT_ID</key>
 	<string>prossimo-9a9d2</string>
 	<key>STORAGE_BUCKET</key>
 	<string>prossimo-9a9d2.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:590727901405:ios:d586fddf0e8c26cb</string>
+	<string>1:590727901405:ios:dfd3bb8bfef45f08</string>
 	<key>DATABASE_URL</key>
 	<string>https://prossimo-9a9d2.firebaseio.com</string>
 </dict>

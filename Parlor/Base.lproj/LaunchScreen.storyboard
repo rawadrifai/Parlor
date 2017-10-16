@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NBx-AU-egT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NBx-AU-egT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -28,34 +28,20 @@
                                     <constraint firstAttribute="height" constant="1" id="hxd-Dy-3TX"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROSSIMO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlL-Bf-231">
-                                <rect key="frame" x="37.5" y="199" width="300" height="34"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parlorlogo" translatesAutoresizingMaskIntoConstraints="NO" id="g9p-hp-ahm">
+                                <rect key="frame" x="71" y="254" width="233" height="159"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="Kio-5C-fxL"/>
-                                    <constraint firstAttribute="width" constant="300" id="eeK-Wv-nIa"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="32"/>
-                                <color key="textColor" red="0.0" green="0.81960784313725488" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="glow-line-short" translatesAutoresizingMaskIntoConstraints="NO" id="S8S-0P-4BF">
-                                <rect key="frame" x="37.5" y="244.5" width="300" height="25.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="A6F-dG-FdZ"/>
-                                    <constraint firstAttribute="height" constant="25.5" id="niH-VR-Jia"/>
+                                    <constraint firstAttribute="width" constant="233" id="ZVN-dl-dSJ"/>
+                                    <constraint firstAttribute="height" constant="159" id="pCr-Mz-tij"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Tre-Bb-hFU" secondAttribute="trailing" id="9te-z2-2Hf"/>
-                            <constraint firstItem="QlL-Bf-231" firstAttribute="centerX" secondItem="Q1J-jn-Z2g" secondAttribute="centerX" id="BoA-9x-lDF"/>
                             <constraint firstItem="Tre-Bb-hFU" firstAttribute="leading" secondItem="Q1J-jn-Z2g" secondAttribute="leadingMargin" id="EIY-On-gw0"/>
                             <constraint firstItem="Tre-Bb-hFU" firstAttribute="centerY" secondItem="Q1J-jn-Z2g" secondAttribute="centerY" id="FBs-PO-stx"/>
-                            <constraint firstItem="Tre-Bb-hFU" firstAttribute="top" secondItem="S8S-0P-4BF" secondAttribute="bottom" constant="63" id="Lr3-44-dDj"/>
-                            <constraint firstItem="S8S-0P-4BF" firstAttribute="centerX" secondItem="Q1J-jn-Z2g" secondAttribute="centerX" id="Wvu-ok-F9L"/>
-                            <constraint firstItem="Tre-Bb-hFU" firstAttribute="top" secondItem="QlL-Bf-231" secondAttribute="bottom" constant="100" id="yUp-ar-Mmg"/>
+                            <constraint firstItem="g9p-hp-ahm" firstAttribute="centerX" secondItem="Q1J-jn-Z2g" secondAttribute="centerX" id="aoY-eS-xWX"/>
+                            <constraint firstItem="g9p-hp-ahm" firstAttribute="centerY" secondItem="Q1J-jn-Z2g" secondAttribute="centerY" id="dqX-Gs-Mjf"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -65,6 +51,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="glow-line-short" width="300" height="22"/>
+        <image name="parlorlogo" width="573" height="473"/>
     </resources>
 </document>

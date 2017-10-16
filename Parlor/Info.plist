@@ -23,7 +23,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.590727901405-5to4suoshpi9293ijitlq5ko7lnsck1u</string>
+				<string>com.googleusercontent.apps.590727901405-o5kp3t15kiihkvrmrmf0cq77s83tpog3</string>
 			</array>
 		</dict>
 		<dict>
@@ -31,7 +31,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>rifai.prossimo.ios</string>
+				<string>DUT56SJCSN.com.parlorme</string>
 			</array>
 		</dict>
 	</array>
@@ -63,11 +63,11 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>Prossimo needs to access the camera</string>
+	<string>Parlor needs to access the camera</string>
 	<key>NSContactsUsageDescription</key>
-	<string>Prossimo needs to access contacts</string>
+	<string>Parlor needs to access contacts</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Prossimo needs to access photo library</string>
+	<string>Parlor needs to access photo library</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>FontAwesome.otf</string>

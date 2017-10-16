@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Prossimo-->
+        <!--Parlor-->
         <scene sceneID="2PM-Iq-KXg">
             <objects>
-                <tableViewController storyboardIdentifier="infoSB" id="KZI-Y6-GH1" customClass="InfoView" customModule="Prossimo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="infoSB" id="KZI-Y6-GH1" userLabel="Parlor" customClass="InfoView" customModule="Parlor" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="nKP-d1-fU1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -387,7 +387,7 @@
                             <outlet property="delegate" destination="KZI-Y6-GH1" id="WnD-U5-Zpr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Prossimo" id="Zkh-Pj-LFL"/>
+                    <navigationItem key="navigationItem" title="Parlor" id="Zkh-Pj-LFL"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO">
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -572,7 +572,7 @@ This Privacy Policy may be updated from time to time for any reason. We will not
         <!--UPGRADE-->
         <scene sceneID="Z0E-5a-YOj">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="hZa-Pe-Vyq" customClass="UpgradeView" customModule="Prossimo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="hZa-Pe-Vyq" customClass="UpgradeView" customModule="Parlor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Equ-oD-zdE"/>
                         <viewControllerLayoutGuide type="bottom" id="t9F-7Z-94R"/>
@@ -877,7 +877,7 @@ Cheers!</string>
         <!--MY INFO-->
         <scene sceneID="okI-vK-9Wj">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="MIT-vx-L0S" customClass="MyInfoVC" customModule="Prossimo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="MIT-vx-L0S" customClass="MyInfoVC" customModule="Parlor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xgy-V9-hin"/>
                         <viewControllerLayoutGuide type="bottom" id="8dD-lA-Vew"/>

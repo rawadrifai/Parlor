@@ -21,7 +21,7 @@
         <!--CLIENT INFO-->
         <scene sceneID="g0d-CE-5jy">
             <objects>
-                <tableViewController id="cdu-h2-G3J" customClass="ClientDetailView" customModule="Prossimo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="cdu-h2-G3J" customClass="ClientDetailView" customModule="Parlor" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" id="IzY-LG-Xfg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -317,7 +317,6 @@
                     <navigationItem key="navigationItem" title="CLIENT INFO" id="RNq-Nc-4zr">
                         <rightBarButtonItems>
                             <barButtonItem systemItem="edit" id="Sal-wN-lPi">
-                                <color key="tintColor" red="0.38431372549019605" green="0.87058823529411766" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="k27-ew-ekf" kind="show" identifier="editClientSegue" id="SU3-sT-faR"/>
                                 </connections>
