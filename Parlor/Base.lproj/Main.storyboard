@@ -46,41 +46,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="M6h-lQ-aQZ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="fBJ-bU-0Dd"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <navigationItem title="SIGN UP" id="EJa-sS-qzp">
-                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="2rf-Lw-BDx">
-                                            <connections>
-                                                <action selector="cancel:" destination="296-gp-6M8" id="OqF-i2-Grt"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ego-ce-mG2">
                                 <rect key="frame" x="0.0" y="60" width="375" height="607"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mt3-Va-glN">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="607"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="599"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please provide basic info for account setup" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h20-Qs-OLx">
-                                                <rect key="frame" x="68" y="50" width="238" height="58"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Parlor Account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h20-Qs-OLx">
+                                                <rect key="frame" x="68" y="50" width="238" height="25.5"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="58" id="Cep-q9-NeF"/>
-                                                    <constraint firstAttribute="width" constant="238" id="LeZ-ga-jfn"/>
+                                                    <constraint firstAttribute="width" constant="238" id="N7u-HW-P7E"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ehX-fb-TW6">
-                                                <rect key="frame" x="20" y="143" width="335" height="320"/>
+                                                <rect key="frame" x="20" y="127.5" width="335" height="320"/>
                                                 <subviews>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RQm-6Y-eMy">
                                                         <rect key="frame" x="0.0" y="0.0" width="335" height="52"/>
@@ -136,7 +118,7 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                         <state key="normal" title="DONE">
-                                                            <color key="titleColor" red="0.38431372549999998" green="0.87058823529999996" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="signInWithDeviceId:" destination="296-gp-6M8" eventType="touchUpInside" id="auW-PP-wRN"/>
@@ -144,36 +126,45 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Br3-A1-x12">
+                                                <rect key="frame" x="145" y="481" width="85" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="85" id="1C8-uN-j6g"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="Cancel"/>
+                                                <connections>
+                                                    <action selector="cancel:" destination="296-gp-6M8" eventType="touchUpInside" id="PMB-UX-ZsJ"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="ehX-fb-TW6" secondAttribute="trailing" constant="20" id="Dw3-Ah-L9H"/>
-                                            <constraint firstItem="h20-Qs-OLx" firstAttribute="centerX" secondItem="Mt3-Va-glN" secondAttribute="centerX" id="KJv-OF-8oQ"/>
-                                            <constraint firstItem="ehX-fb-TW6" firstAttribute="top" secondItem="h20-Qs-OLx" secondAttribute="bottom" constant="35" id="YFm-HZ-B2V"/>
-                                            <constraint firstItem="h20-Qs-OLx" firstAttribute="top" secondItem="Mt3-Va-glN" secondAttribute="top" constant="50" id="gqk-7z-QTW"/>
-                                            <constraint firstItem="ehX-fb-TW6" firstAttribute="leading" secondItem="Mt3-Va-glN" secondAttribute="leading" constant="20" id="p3S-BO-u2c"/>
-                                            <constraint firstAttribute="height" constant="607" id="rjn-e3-vGt"/>
+                                            <constraint firstItem="h20-Qs-OLx" firstAttribute="top" secondItem="Mt3-Va-glN" secondAttribute="top" constant="50" id="Aaf-zV-tqg"/>
+                                            <constraint firstItem="ehX-fb-TW6" firstAttribute="leading" secondItem="Mt3-Va-glN" secondAttribute="leading" constant="20" id="FKr-Rc-LLM"/>
+                                            <constraint firstItem="ehX-fb-TW6" firstAttribute="top" secondItem="h20-Qs-OLx" secondAttribute="bottom" constant="52" id="IDU-3i-aLd"/>
+                                            <constraint firstAttribute="height" constant="599" id="NIh-n4-ZrD"/>
+                                            <constraint firstItem="Br3-A1-x12" firstAttribute="centerX" secondItem="Mt3-Va-glN" secondAttribute="centerX" id="aMf-pD-eQv"/>
+                                            <constraint firstItem="Br3-A1-x12" firstAttribute="top" secondItem="ehX-fb-TW6" secondAttribute="bottom" constant="33" id="k5c-Ha-7Rz"/>
+                                            <constraint firstItem="h20-Qs-OLx" firstAttribute="centerX" secondItem="Mt3-Va-glN" secondAttribute="centerX" id="sRg-7c-sEh"/>
+                                            <constraint firstAttribute="trailing" secondItem="ehX-fb-TW6" secondAttribute="trailing" constant="20" id="ztg-zW-rfD"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Mt3-Va-glN" firstAttribute="leading" secondItem="Ego-ce-mG2" secondAttribute="leading" id="0oI-AZ-wIt"/>
-                                    <constraint firstAttribute="bottom" secondItem="Mt3-Va-glN" secondAttribute="bottom" id="9CK-Au-suF"/>
-                                    <constraint firstItem="Mt3-Va-glN" firstAttribute="top" secondItem="Ego-ce-mG2" secondAttribute="top" id="C5y-I3-KHB"/>
-                                    <constraint firstAttribute="trailing" secondItem="Mt3-Va-glN" secondAttribute="trailing" id="wNC-T7-L53"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mt3-Va-glN" secondAttribute="bottom" id="N6P-dm-txc"/>
+                                    <constraint firstItem="Mt3-Va-glN" firstAttribute="top" secondItem="Ego-ce-mG2" secondAttribute="top" id="SgO-It-G4H"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mt3-Va-glN" secondAttribute="trailing" id="qpK-s0-n8Q"/>
+                                    <constraint firstItem="Mt3-Va-glN" firstAttribute="leading" secondItem="Ego-ce-mG2" secondAttribute="leading" id="uw5-nu-DcR"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="O7R-jK-6tq" firstAttribute="top" secondItem="Ego-ce-mG2" secondAttribute="bottom" id="BJ5-Bb-row"/>
-                            <constraint firstItem="Ego-ce-mG2" firstAttribute="top" secondItem="M6h-lQ-aQZ" secondAttribute="bottom" id="Hud-2b-nHV"/>
-                            <constraint firstAttribute="trailing" secondItem="Ego-ce-mG2" secondAttribute="trailing" id="K6i-6e-zhJ"/>
-                            <constraint firstItem="M6h-lQ-aQZ" firstAttribute="top" secondItem="mVH-EE-p2a" secondAttribute="bottom" constant="-20" id="V0m-2f-nbl"/>
-                            <constraint firstItem="Mt3-Va-glN" firstAttribute="width" secondItem="4Qz-mo-ENe" secondAttribute="width" id="kwA-zM-OhY"/>
-                            <constraint firstItem="Ego-ce-mG2" firstAttribute="leading" secondItem="4Qz-mo-ENe" secondAttribute="leading" id="pRB-nd-lLa"/>
-                            <constraint firstItem="M6h-lQ-aQZ" firstAttribute="leading" secondItem="4Qz-mo-ENe" secondAttribute="leading" id="sSS-Au-P7a"/>
-                            <constraint firstAttribute="trailing" secondItem="M6h-lQ-aQZ" secondAttribute="trailing" id="xcs-lz-aLw"/>
+                            <constraint firstItem="Mt3-Va-glN" firstAttribute="width" secondItem="4Qz-mo-ENe" secondAttribute="width" id="33D-sC-hqp"/>
+                            <constraint firstItem="O7R-jK-6tq" firstAttribute="top" secondItem="Ego-ce-mG2" secondAttribute="bottom" id="5h7-1b-E4D"/>
+                            <constraint firstItem="Ego-ce-mG2" firstAttribute="leading" secondItem="4Qz-mo-ENe" secondAttribute="leading" id="iwR-2E-pwY"/>
+                            <constraint firstAttribute="trailing" secondItem="Ego-ce-mG2" secondAttribute="trailing" id="l6M-H0-kMY"/>
+                            <constraint firstItem="Ego-ce-mG2" firstAttribute="top" secondItem="mVH-EE-p2a" secondAttribute="bottom" constant="40" id="zqb-I2-wKP"/>
                         </constraints>
                     </view>
                     <connections>
@@ -290,11 +281,9 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9yR-0W-Xz0" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" id="rcm-6f-XcJ"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" alpha="0.29999999999999999" contentMode="scaleToFill" id="AfO-F3-mUS">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" alpha="0.29999999999999999" contentMode="scaleToFill" largeTitles="YES" id="AfO-F3-mUS">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -311,11 +300,9 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="m32-ze-ylf" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" id="ysb-Oa-uIw"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" alpha="0.29999999999999999" contentMode="scaleToFill" id="hdr-Ba-Po8">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" alpha="0.29999999999999999" contentMode="scaleToFill" largeTitles="YES" id="hdr-Ba-Po8">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -350,11 +337,9 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f6K-Hz-qdV" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" id="rgf-eg-vlh"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" alpha="0.5" contentMode="scaleToFill" id="clV-Qn-FnH">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" alpha="0.29999999999999999" contentMode="scaleToFill" largeTitles="YES" id="clV-Qn-FnH">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -363,7 +348,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="odA-vJ-ZhK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1396" y="717.39130434782612"/>
+            <point key="canvasLocation" x="1057" y="705"/>
         </scene>
         <!--Money-->
         <scene sceneID="DqQ-Cl-Glk">
@@ -390,6 +375,6 @@
         <image name="parlorlogo" width="573" height="473"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kDg-HA-5R9"/>
+        <segue reference="O2Z-Jn-XOB"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Futura.ttc">
+            <string>Futura-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--PageVC-->
         <scene sceneID="IB9-k3-813">
             <objects>
-                <pageViewController storyboardIdentifier="tutorialSB" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="lKi-rm-99K" customClass="PageVC" customModule="Prossimo" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="tutorialSB" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="lKi-rm-99K" customClass="PageVC" customModule="Parlor" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3hp-ZF-HuR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2206" y="1199"/>
@@ -22,7 +27,7 @@
         <!--FinalVC-->
         <scene sceneID="tVR-fs-fhd">
             <objects>
-                <viewController restorationIdentifier="FinalVC" storyboardIdentifier="FinalVC" id="lwz-h8-ahJ" customClass="FinalVC" customModule="Prossimo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="FinalVC" storyboardIdentifier="FinalVC" id="lwz-h8-ahJ" customClass="FinalVC" customModule="Parlor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QJ1-t5-xO4"/>
                         <viewControllerLayoutGuide type="bottom" id="QaL-yH-WOu"/>
@@ -86,7 +91,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROSSIMO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDW-90-wpj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PARLOR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDW-90-wpj">
                                 <rect key="frame" x="16" y="233" width="343" height="42"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="32"/>
                                 <color key="textColor" red="0.0" green="0.81960784313725488" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -142,7 +147,7 @@
         <!--FirstVC-->
         <scene sceneID="M0R-xZ-t0K">
             <objects>
-                <viewController restorationIdentifier="SecondVC" storyboardIdentifier="SecondVC" id="BZU-cK-OjE" customClass="FirstVC" customModule="Prossimo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="SecondVC" storyboardIdentifier="SecondVC" id="BZU-cK-OjE" customClass="FirstVC" customModule="Parlor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Kk1-i7-vvg"/>
                         <viewControllerLayoutGuide type="bottom" id="11v-3j-itF"/>
@@ -228,7 +233,7 @@
         <!--ThirdVC-->
         <scene sceneID="2H0-VW-Nna">
             <objects>
-                <viewController restorationIdentifier="FourthVC" storyboardIdentifier="FourthVC" id="Stw-4S-VrB" customClass="ThirdVC" customModule="Prossimo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="FourthVC" storyboardIdentifier="FourthVC" id="Stw-4S-VrB" customClass="ThirdVC" customModule="Parlor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hyK-rU-49M"/>
                         <viewControllerLayoutGuide type="bottom" id="xtH-q2-syx"/>
@@ -254,7 +259,7 @@
                                             <constraint firstAttribute="height" constant="44" id="85g-uN-RLZ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <color key="textColor" red="0.38431372549019605" green="0.87058823529411766" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOTES. PRICE. PRICTURES. AND MORE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUy-Sq-3xW">
@@ -286,7 +291,7 @@
                                     <constraint firstAttribute="height" constant="50" id="WzF-nC-G5S"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
-                                <color key="textColor" red="0.38431372549019605" green="0.87058823529411766" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -313,7 +318,7 @@
         <!--FourthVC-->
         <scene sceneID="CdY-bJ-KwR">
             <objects>
-                <viewController restorationIdentifier="FifthVC" storyboardIdentifier="FifthVC" id="Bg1-jF-SHi" customClass="FourthVC" customModule="Prossimo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="FifthVC" storyboardIdentifier="FifthVC" id="Bg1-jF-SHi" customClass="FourthVC" customModule="Parlor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xoJ-CO-kcE"/>
                         <viewControllerLayoutGuide type="bottom" id="mBl-1C-nzE"/>
@@ -340,7 +345,7 @@
                                             <constraint firstAttribute="height" constant="44" id="oYg-MT-zuS"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <color key="textColor" red="0.38431372549019605" green="0.87058823529411766" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLICK '+' TO ADD EXPENSES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPa-3S-FoN">
@@ -372,7 +377,7 @@
                                     <constraint firstAttribute="height" constant="44" id="jRN-xj-MNJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
-                                <color key="textColor" red="0.38431372549019605" green="0.87058823529411766" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -399,7 +404,7 @@
         <!--SecondVC-->
         <scene sceneID="Rdr-Sa-12h">
             <objects>
-                <viewController restorationIdentifier="ThirdVC" storyboardIdentifier="ThirdVC" id="FpG-As-vAU" customClass="SecondVC" customModule="Prossimo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="ThirdVC" storyboardIdentifier="ThirdVC" id="FpG-As-vAU" customClass="SecondVC" customModule="Parlor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bGA-o4-boH"/>
                         <viewControllerLayoutGuide type="bottom" id="aie-sh-JuY"/>
@@ -426,7 +431,7 @@
                                             <constraint firstAttribute="height" constant="44" id="Wfj-Pd-peK"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <color key="textColor" red="0.38431372549019605" green="0.87058823529411766" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEW HAIRCUT. VISIT HISTORY. AND MORE." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khp-yb-RO8">
@@ -458,7 +463,7 @@
                                     <constraint firstAttribute="height" constant="50" id="JgJ-yT-sJr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
-                                <color key="textColor" red="0.38431372549019605" green="0.87058823529411766" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

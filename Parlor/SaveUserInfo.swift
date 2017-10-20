@@ -152,7 +152,7 @@ class SaveUserInfo: UIViewController {
     
     
 
-    @IBAction func cancel(_ sender: UIBarButtonItem) {
+    @IBAction func cancel(_ sender: UIButton) {
         
         self.dismiss(animated: true, completion: nil)
         

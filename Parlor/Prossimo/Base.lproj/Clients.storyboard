@@ -22,10 +22,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOADING CLIENTS ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EHk-h8-PkH">
+                        <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOADING CLIENTS ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EHk-h8-PkH">
                             <rect key="frame" x="0.0" y="106" width="375" height="40"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
@@ -46,26 +46,20 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Clients" id="y7h-ar-T1R">
-                        <barButtonItem key="leftBarButtonItem" title="" id="2FV-pB-QDe">
+                    <navigationItem key="navigationItem" title="Clients" id="c0l-2V-lTL">
+                        <barButtonItem key="leftBarButtonItem" id="uoJ-4t-eqB"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="1d2-M4-JZb">
                             <connections>
-                                <action selector="importClick:" destination="ziU-oG-owb" id="Zl3-0G-BZS"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="9sU-GN-Vq4">
-                            <connections>
-                                <segue destination="Jzp-1Y-k6F" kind="show" identifier="newClientSegue" id="si4-HL-2bY"/>
+                                <segue destination="Jzp-1Y-k6F" kind="show" identifier="newClientSegue" id="HpI-Cp-Jcu"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO">
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </simulatedNavigationBarMetrics>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="btnAddClient" destination="9sU-GN-Vq4" id="gUc-bD-lew"/>
-                        <outlet property="btnImport" destination="2FV-pB-QDe" id="D2M-Qf-fQr"/>
+                        <outlet property="btnAddClient" destination="1d2-M4-JZb" id="EXe-kd-Fcg"/>
+                        <outlet property="btnImport" destination="uoJ-4t-eqB" id="sTO-BH-fZS"/>
                         <outlet property="labelClientCount" destination="EHk-h8-PkH" id="uEb-yI-2h4"/>
                         <outlet property="searchDisplayController" destination="Gic-RT-EUo" id="r2P-iJ-0AT"/>
                         <outlet property="tableView" destination="wtp-iS-dcW" id="OsO-XC-mEq"/>

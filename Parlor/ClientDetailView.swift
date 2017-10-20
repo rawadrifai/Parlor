@@ -136,9 +136,14 @@ class ClientDetailView: UITableViewController, UINavigationControllerDelegate, U
     
     func makeUIChanges() {
 
+        setTitle()
         setIcons()
         makeProfilePicInteractive()
         setBorders()
+    }
+    
+    func setTitle() {
+        self.title = self.client.clientName
     }
     
     func makeProfilePicInteractive() {
@@ -174,13 +179,18 @@ class ClientDetailView: UITableViewController, UINavigationControllerDelegate, U
         
         self.btnText.layer.cornerRadius = 20
         self.btnText.contentMode = .scaleAspectFill
+        self.btnText.layer.borderColor = UIColor.darkGray.cgColor
+        self.btnText.layer.borderWidth = 1
         
         self.btnEmail.layer.cornerRadius = 20
         self.btnEmail.contentMode = .scaleAspectFill
-        
+        self.btnEmail.layer.borderColor = UIColor.darkGray.cgColor
+        self.btnEmail.layer.borderWidth = 1
         
         self.btnPhone.layer.cornerRadius = 20
         self.btnPhone.contentMode = .scaleAspectFill
+        self.btnPhone.layer.borderColor = UIColor.darkGray.cgColor
+        self.btnPhone.layer.borderWidth = 1
     }
 
     
@@ -188,43 +198,43 @@ class ClientDetailView: UITableViewController, UINavigationControllerDelegate, U
         
         
         // camera icon
-        var cameraIconImage = FAKFontAwesome.cameraIcon(withSize: 60).image(with: CGSize(width: 60, height: 60))
-        cameraIconImage = cameraIconImage?.imageWithColor(color: Commons.myColor)
+        let cameraIconImage = FAKFontAwesome.cameraIcon(withSize: 60).image(with: CGSize(width: 60, height: 60))
+        //cameraIconImage = cameraIconImage?.imageWithColor(color: Commons.myColor)
         imgView.image = cameraIconImage
         
         
         // phone icon
-        var phoneIconImage = FAKFontAwesome.phoneIcon(withSize: 20).image(with: CGSize(width: 40, height: 40))
-        phoneIconImage = phoneIconImage?.imageWithColor(color: Commons.myColor)
+        let phoneIconImage = FAKFontAwesome.phoneIcon(withSize: 20).image(with: CGSize(width: 40, height: 40))
+        //phoneIconImage = phoneIconImage?.imageWithColor(color: Commons.myColor)
         btnPhone.setImage(phoneIconImage, for: .normal)
         
         
         // sms icon
-        var smsIconImage = FAKFontAwesome.commentingOIcon(withSize: 20).image(with: CGSize(width: 40, height: 40))
-        smsIconImage = smsIconImage?.imageWithColor(color: Commons.myColor)
+        let smsIconImage = FAKFontAwesome.commentingOIcon(withSize: 20).image(with: CGSize(width: 40, height: 40))
+        //smsIconImage = smsIconImage?.imageWithColor(color: Commons.myColor)
         btnText.setImage(smsIconImage, for: .normal)
         
         
         // email icon
-        var emailIconImage = FAKFontAwesome.envelopeOIcon(withSize: 20).image(with: CGSize(width: 40, height: 40))
-        emailIconImage = emailIconImage?.imageWithColor(color: Commons.myColor)
+        let emailIconImage = FAKFontAwesome.envelopeOIcon(withSize: 20).image(with: CGSize(width: 40, height: 40))
+        //emailIconImage = emailIconImage?.imageWithColor(color: Commons.myColor)
         btnEmail.setImage(emailIconImage, for: .normal)
         
         
         // all visits icon
-        var allVisitsIconImage = FAKFontAwesome.listUlIcon(withSize: 10).image(with: CGSize(width: 10, height: 10))
-        allVisitsIconImage = allVisitsIconImage?.imageWithColor(color: Commons.myColor)
+        let allVisitsIconImage = FAKFontAwesome.listUlIcon(withSize: 10).image(with: CGSize(width: 10, height: 10))
+        //allVisitsIconImage = allVisitsIconImage?.imageWithColor(color: Commons.myColor)
         btnAllVisits.setImage(allVisitsIconImage, for: .normal)
         
         // starred visits icon
-        var starredIconImage = FAKFontAwesome.starOIcon(withSize: 10).image(with: CGSize(width: 10, height: 10))
-        starredIconImage = starredIconImage?.imageWithColor(color: Commons.myColor)
+        let starredIconImage = FAKFontAwesome.starOIcon(withSize: 10).image(with: CGSize(width: 10, height: 10))
+        //starredIconImage = starredIconImage?.imageWithColor(color: Commons.myColor)
         btnStarred.setImage(starredIconImage, for: .normal)
         
         
         // reminder icon
         let reminderImage = FAKFontAwesome.bellOIcon(withSize: 20).image(with: CGSize(width: 35, height: 20))
-        btnReminder.tintColor = Commons.myColor
+        //btnReminder.tintColor = Commons.myColor
         btnReminder.image = reminderImage
         
         
@@ -290,7 +300,6 @@ class ClientDetailView: UITableViewController, UINavigationControllerDelegate, U
             
             self.client.clientVisits.sort { $0.sortingDate > $1.sortingDate }
             self.tableView.reloadData()
-            self.setLastVisit()
             
             self.selectedVisitIndex = 0
             self.performSegue(withIdentifier: "pictureTimeSegue", sender: self)
@@ -334,27 +343,13 @@ class ClientDetailView: UITableViewController, UINavigationControllerDelegate, U
         
     }
 
-    func setLastVisit() {
-        
-        if client.clientVisits.count == 0 { return }
-        
-        let stringLastVisit = client.clientVisits[0].visitDate
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MM/dd/yyyy"
-        let dateLastVisit = dateFormatter.date(from:stringLastVisit)!
-        
-        let sinceLastVisit = Date().days(from: dateLastVisit).description
-        
-        labelLastVisit.text = sinceLastVisit + " days ago"
-        
-
-    }
     
     func fillData() {
         
-        labelName.text = client.clientName
+        //labelName.text = client.clientName
+        self.title = client.clientName
+        //self.setTitle()
         
-        setLastVisit()
         
         if client.profileImg.imageUrl != "" {
             self.imgView.sd_setShowActivityIndicatorView(true)
@@ -498,7 +493,6 @@ class ClientDetailView: UITableViewController, UINavigationControllerDelegate, U
                 
                 self.client.clientVisits.remove(at: indexPath.row)
                 self.tableView.reloadData()
-                self.setLastVisit()
                 self.setAggregates()
                 
                 // delete from firebase
@@ -739,7 +733,6 @@ extension ClientDetailView: PictureTimeDelegate {
         self.client.clientVisits.sort { $0.sortingDate > $1.sortingDate }
         
         self.tableView.reloadData()
-        setLastVisit()
     }
 }
 

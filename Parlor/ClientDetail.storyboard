@@ -18,7 +18,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--CLIENT INFO-->
+        <!--Client Detail View-->
         <scene sceneID="g0d-CE-5jy">
             <objects>
                 <tableViewController id="cdu-h2-G3J" customClass="ClientDetailView" customModule="Parlor" customModuleProvider="target" sceneMemberID="viewController">
@@ -80,45 +80,10 @@
                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Enk-Bu-fDE">
-                                                                    <rect key="frame" x="1" y="45" width="149" height="15"/>
-                                                                    <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FpK-Pw-vQW">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="13" height="15"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="13" id="S9h-nt-a61"/>
-                                                                            </constraints>
-                                                                            <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="12"/>
-                                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Visit:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMZ-yH-c7t">
-                                                                            <rect key="frame" x="17" y="0.0" width="58" height="15"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="58" id="xac-pc-al8"/>
-                                                                            </constraints>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypp-I2-9oB">
-                                                                            <rect key="frame" x="79" y="0.0" width="70" height="15"/>
-                                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
-                                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                    </subviews>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="14.5" id="RNv-zG-9Lw"/>
-                                                                    </constraints>
-                                                                </stackView>
                                                             </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
-                                                                <constraint firstItem="Enk-Bu-fDE" firstAttribute="top" secondItem="bYU-JW-HtW" secondAttribute="bottom" constant="5" id="2bv-13-4oP"/>
                                                                 <constraint firstAttribute="height" constant="90" id="58t-VY-BBt"/>
-                                                                <constraint firstItem="Enk-Bu-fDE" firstAttribute="leading" secondItem="9pR-6G-ANo" secondAttribute="leading" constant="1" id="Aua-St-NHe"/>
-                                                                <constraint firstAttribute="trailing" secondItem="Enk-Bu-fDE" secondAttribute="trailing" id="TdS-Iw-kmq"/>
                                                                 <constraint firstItem="bYU-JW-HtW" firstAttribute="top" secondItem="9pR-6G-ANo" secondAttribute="top" constant="10" id="dGo-5c-F7Y"/>
                                                                 <constraint firstAttribute="trailing" secondItem="bYU-JW-HtW" secondAttribute="trailing" id="k0p-14-Pu0"/>
                                                                 <constraint firstItem="bYU-JW-HtW" firstAttribute="leading" secondItem="9pR-6G-ANo" secondAttribute="leading" id="piq-uj-y4m"/>
@@ -129,45 +94,33 @@
                                                             <subviews>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTW-cF-8Ua">
                                                                     <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
-                                                                    <color key="backgroundColor" red="0.1764705882" green="0.1764705882" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="40" id="CHH-JD-3vu"/>
                                                                         <constraint firstAttribute="width" constant="40" id="f5P-rS-dKT"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="20"/>
-                                                                    <state key="normal">
-                                                                        <color key="titleColor" red="0.38431372549019605" green="0.87058823529411766" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    </state>
                                                                     <connections>
                                                                         <action selector="emailClick:" destination="cdu-h2-G3J" eventType="touchUpInside" id="hnm-Ud-2ui"/>
                                                                     </connections>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHB-wf-8p0">
                                                                     <rect key="frame" x="55" y="0.0" width="40" height="40"/>
-                                                                    <color key="backgroundColor" red="0.1764705882352941" green="0.1764705882352941" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="40" id="W7V-N5-4xB"/>
                                                                         <constraint firstAttribute="height" constant="40" id="has-el-pr2"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="20"/>
-                                                                    <state key="normal">
-                                                                        <color key="titleColor" red="0.38431372549019605" green="0.87058823529411766" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    </state>
                                                                     <connections>
                                                                         <action selector="messageClick:" destination="cdu-h2-G3J" eventType="touchUpInside" id="Aka-ZD-mOh"/>
                                                                     </connections>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utc-RW-75T">
                                                                     <rect key="frame" x="110" y="0.0" width="40" height="40"/>
-                                                                    <color key="backgroundColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="40" id="vih-C7-YPX"/>
                                                                         <constraint firstAttribute="width" constant="40" id="xJR-0k-bVh"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="20"/>
-                                                                    <state key="normal">
-                                                                        <color key="titleColor" red="0.38431372549019605" green="0.87058823529411766" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    </state>
                                                                     <connections>
                                                                         <action selector="phoneClick:" destination="cdu-h2-G3J" eventType="touchUpInside" id="bVi-WY-vGg"/>
                                                                     </connections>
@@ -203,7 +156,7 @@
                                     </constraints>
                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                     <state key="normal" title="NEW HAIRCUT">
-                                        <color key="titleColor" red="0.38431372549019605" green="0.87058823529411766" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
                                     <connections>
                                         <action selector="newHaircut:" destination="cdu-h2-G3J" eventType="touchUpInside" id="Iq3-Cu-wcb"/>
@@ -233,7 +186,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="115" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                     <state key="normal" title="  ALL VISITS">
-                                                        <color key="titleColor" red="0.38431372549019605" green="0.87058823529411766" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <connections>
                                                         <action selector="visitsClicked:" destination="cdu-h2-G3J" eventType="touchUpInside" id="T0s-77-Vgg"/>
@@ -256,7 +209,6 @@
                                             </constraints>
                                         </stackView>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.16078431372549018" green="0.16078431372549018" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="ZB7-MD-LbL" firstAttribute="leading" secondItem="9bO-vu-Y8q" secondAttribute="leading" constant="20" id="0xB-EJ-a6l"/>
                                         <constraint firstAttribute="height" constant="52" id="OL0-LE-2D3"/>
@@ -265,7 +217,7 @@
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31A-Ud-7kU">
                                     <rect key="frame" x="20" y="370" width="116" height="5"/>
-                                    <color key="backgroundColor" red="0.38431372549019605" green="0.87058823529411766" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="116" id="TwN-ep-jiY"/>
                                         <constraint firstAttribute="height" constant="5" id="zHA-dK-aVR"/>
@@ -314,38 +266,30 @@
                             <outlet property="delegate" destination="cdu-h2-G3J" id="53d-TJ-Js9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="CLIENT INFO" id="RNq-Nc-4zr">
+                    <navigationItem key="navigationItem" id="rnf-Fr-OfR">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="edit" id="Sal-wN-lPi">
+                            <barButtonItem systemItem="edit" id="Fgg-S5-HIq">
                                 <connections>
-                                    <segue destination="k27-ew-ekf" kind="show" identifier="editClientSegue" id="SU3-sT-faR"/>
+                                    <segue destination="k27-ew-ekf" kind="show" identifier="editClientSegue" id="xz1-vy-eYB"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem id="mMC-Ho-gMi">
-                                <connections>
-                                    <action selector="reminderClick:" destination="cdu-h2-G3J" id="eLe-ZJ-QwE"/>
-                                </connections>
-                            </barButtonItem>
+                            <barButtonItem id="m7V-F2-x6b"/>
                         </rightBarButtonItems>
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO">
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </simulatedNavigationBarMetrics>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="btnAllVisits" destination="tn7-uz-Fjr" id="N8D-KB-uOh"/>
                         <outlet property="btnEmail" destination="WTW-cF-8Ua" id="RUD-vJ-Ts9"/>
                         <outlet property="btnNewHC" destination="vmL-sm-0EM" id="mEC-oj-Hfd"/>
                         <outlet property="btnPhone" destination="utc-RW-75T" id="Yn5-CM-a3d"/>
-                        <outlet property="btnReminder" destination="mMC-Ho-gMi" id="aaj-1R-6Q5"/>
+                        <outlet property="btnReminder" destination="m7V-F2-x6b" id="hYe-Ba-m37"/>
                         <outlet property="btnStarred" destination="YiL-dx-uHw" id="Vao-iw-YbN"/>
                         <outlet property="btnText" destination="AHB-wf-8p0" id="IHH-oh-3xv"/>
                         <outlet property="imgView" destination="qCe-To-KB4" id="mhx-tM-xNu"/>
-                        <outlet property="labelCalendar" destination="FpK-Pw-vQW" id="Yri-JT-Qs2"/>
                         <outlet property="labelChangePicture" destination="TnB-a0-6WE" id="4d9-dh-taC"/>
                         <outlet property="labelClientAggregate" destination="zhR-A0-c2T" id="9Qo-WX-6gx"/>
-                        <outlet property="labelLastVisit" destination="ypp-I2-9oB" id="OfK-sN-MbD"/>
                         <outlet property="labelName" destination="bYU-JW-HtW" id="voF-aG-Zrl"/>
                         <outlet property="line" destination="31A-Ud-7kU" id="aAd-gv-WcN"/>
                         <segue destination="x5a-N5-Rfo" kind="show" identifier="pictureTimeSegue" id="S1p-Bx-7mW"/>
@@ -372,10 +316,10 @@
             </objects>
             <point key="canvasLocation" x="3158" y="94"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--HaircutDetail-->
         <scene sceneID="EFr-za-dCs">
             <objects>
-                <viewControllerPlaceholder id="atB-vL-dlz" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="HaircutDetail" id="atB-vL-dlz" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="thx-LU-UgX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3158" y="-122"/>

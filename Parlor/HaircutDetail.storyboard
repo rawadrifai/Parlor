@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="o9q-rL-Ugv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="o9q-rL-Ugv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,12 +13,15 @@
         <array key="FontAwesome.otf">
             <string>FontAwesome</string>
         </array>
+        <array key="Futura.ttc">
+            <string>Futura-Medium</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Picture Time View-->
         <scene sceneID="A0a-IB-LWO">
             <objects>
-                <tableViewController id="o9q-rL-Ugv" customClass="PictureTimeView" customModule="Prossimo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="o9q-rL-Ugv" customClass="PictureTimeView" customModule="Parlor" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="380" sectionHeaderHeight="28" sectionFooterHeight="28" id="fBQ-oX-o4w">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -286,18 +289,13 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="G74-vR-hE1">
-                        <barButtonItem key="rightBarButtonItem" id="O9Y-Ph-nIP">
-                            <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="starClicked:" destination="o9q-rL-Ugv" id="eiZ-YB-nyk"/>
-                            </connections>
+                    <navigationItem key="navigationItem" id="Vib-i8-l0W">
+                        <barButtonItem key="rightBarButtonItem" id="1xY-X3-rnZ">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO">
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </simulatedNavigationBarMetrics>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="btnCamera" destination="Oi9-ho-fQn" id="eWh-0F-HdO"/>
@@ -306,7 +304,7 @@
                         <outlet property="btnPrice1" destination="uS8-ZY-RKd" id="uR1-HL-Igm"/>
                         <outlet property="btnPrice2" destination="4l7-RA-mkf" id="43Q-0w-EVY"/>
                         <outlet property="btnPrice3" destination="5d1-o7-Mjp" id="5qO-TE-nUI"/>
-                        <outlet property="btnStar" destination="O9Y-Ph-nIP" id="Kzv-dK-J2A"/>
+                        <outlet property="btnStar" destination="1xY-X3-rnZ" id="F9c-hy-4p5"/>
                         <outlet property="labelNotes" destination="Kcr-Wf-CGE" id="fov-Xh-pSs"/>
                         <outlet property="txfPrice" destination="nax-71-bCF" id="B0X-l9-dYc"/>
                         <outlet property="txvNotes" destination="VZp-ys-fOQ" id="riv-zn-yHF"/>
@@ -319,7 +317,7 @@
         <!--Styles-->
         <scene sceneID="YUe-HC-Jue">
             <objects>
-                <viewController id="GpK-c8-QkJ" customClass="OptionsView" customModule="Prossimo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GpK-c8-QkJ" customClass="OptionsView" customModule="Parlor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bf2-rr-uAZ"/>
                         <viewControllerLayoutGuide type="bottom" id="yyg-Zz-ZaK"/>
@@ -377,7 +375,6 @@
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1dy-Rc-zZf">
                                                 <rect key="frame" x="0.0" y="55" width="323" height="10"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="10" id="GC7-ow-hq4"/>
                                                 </constraints>
@@ -497,7 +494,6 @@
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DkM-Cf-swW">
                                                 <rect key="frame" x="0.0" y="225" width="323" height="10"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="10" id="NcH-SV-DiC"/>
                                                 </constraints>
@@ -554,7 +550,6 @@
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o9G-JA-2fj">
                                                 <rect key="frame" x="0.0" y="340" width="323" height="10"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="10" id="bwS-pF-TBy"/>
                                                 </constraints>
@@ -626,6 +621,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="uUT-WU-zyZ" firstAttribute="leading" secondItem="VO9-4x-Rph" secondAttribute="leading" constant="26" id="JpK-io-MnY"/>
                                     <constraint firstItem="uUT-WU-zyZ" firstAttribute="centerX" secondItem="VO9-4x-Rph" secondAttribute="centerX" id="RIz-lE-Dfq"/>
@@ -636,7 +632,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="VO9-4x-Rph" firstAttribute="width" secondItem="zZF-1Z-JDI" secondAttribute="width" id="Gik-b9-Qm4"/>
                             <constraint firstAttribute="trailing" secondItem="VO9-4x-Rph" secondAttribute="trailing" id="N40-ca-tlY"/>
@@ -674,7 +670,7 @@
         <!--Styles-->
         <scene sceneID="WLX-uk-GBk">
             <objects>
-                <viewController id="oyG-k5-9ky" customClass="FemaleOptionsView" customModule="Prossimo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oyG-k5-9ky" customClass="FemaleOptionsView" customModule="Parlor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q3U-Nm-dlc"/>
                         <viewControllerLayoutGuide type="bottom" id="JyR-Tr-vmn"/>
@@ -741,7 +737,6 @@
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SqZ-TX-aeT">
                                                 <rect key="frame" x="0.0" y="100" width="323" height="10"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="10" id="Lam-kK-so7"/>
                                                 </constraints>
@@ -806,7 +801,6 @@
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B8D-Yy-D6y">
                                                 <rect key="frame" x="0.0" y="270" width="323" height="10"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="10" id="vpS-5o-nxF"/>
                                                 </constraints>
@@ -852,7 +846,6 @@
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6cQ-op-bft">
                                                 <rect key="frame" x="0.0" y="385" width="323" height="10"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="10" id="IrJ-de-o46"/>
                                                 </constraints>

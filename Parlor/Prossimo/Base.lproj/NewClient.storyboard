@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Bpa-6O-VMt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Bpa-6O-VMt">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +13,7 @@
         <!--NEW CLIENT-->
         <scene sceneID="1np-IK-4cB">
             <objects>
-                <viewController id="Bpa-6O-VMt" customClass="NewClientVC" customModule="Prossimo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Bpa-6O-VMt" customClass="NewClientVC" customModule="Parlor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aDl-7d-b3D"/>
                         <viewControllerLayoutGuide type="bottom" id="QEp-v5-s7h"/>
@@ -22,25 +22,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QSE-rP-72S">
-                                <rect key="frame" x="0.0" y="64" width="375" height="120"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IzX-RK-eIR">
-                                        <rect key="frame" x="0.0" y="110" width="375" height="10"/>
-                                        <color key="backgroundColor" red="0.38431372549019605" green="0.87058823529411766" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="10" id="8N8-XB-ijP"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" red="0.1764705882352941" green="0.1764705882352941" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="IzX-RK-eIR" secondAttribute="bottom" id="AvX-3i-FS3"/>
-                                    <constraint firstItem="IzX-RK-eIR" firstAttribute="leading" secondItem="QSE-rP-72S" secondAttribute="leading" id="Uub-WJ-521"/>
-                                    <constraint firstAttribute="trailing" secondItem="IzX-RK-eIR" secondAttribute="trailing" id="m0X-G7-yxr"/>
-                                    <constraint firstAttribute="height" constant="120" id="oXW-B7-CN6"/>
-                                </constraints>
-                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-camera-32" translatesAutoresizingMaskIntoConstraints="NO" id="mBS-fM-fKT">
                                 <rect key="frame" x="87" y="84" width="200" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -49,10 +30,10 @@
                                     <constraint firstAttribute="height" constant="200" id="yiL-oJ-RUP"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ecR-aW-nEC">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ecR-aW-nEC">
                                 <rect key="frame" x="36" y="326" width="303" height="160"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xbD-6d-sIh">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xbD-6d-sIh">
                                         <rect key="frame" x="0.0" y="0.0" width="303" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -62,7 +43,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone (Optional)" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="YVa-jl-Cxj">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone (Optional)" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="YVa-jl-Cxj">
                                         <rect key="frame" x="0.0" y="55" width="303" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -75,7 +56,7 @@
                                             <action selector="txfPhoneEditingChanged:" destination="Bpa-6O-VMt" eventType="editingChanged" id="6Wc-pr-6yL"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email (Optional)" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ZHP-yE-HqM">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email (Optional)" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ZHP-yE-HqM">
                                         <rect key="frame" x="0.0" y="110" width="303" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -97,41 +78,44 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IzX-RK-eIR">
+                                <rect key="frame" x="0.0" y="179" width="375" height="10"/>
+                                <color key="backgroundColor" red="0.38431372549019605" green="0.87058823529411766" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="WUX-Lg-VKs"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="ecR-aW-nEC" secondAttribute="trailing" constant="20" id="0z6-ch-ok6"/>
-                            <constraint firstItem="ecR-aW-nEC" firstAttribute="top" secondItem="QSE-rP-72S" secondAttribute="bottom" constant="142" id="DqA-ZR-wmR"/>
-                            <constraint firstAttribute="trailing" secondItem="QSE-rP-72S" secondAttribute="trailing" id="EJg-YS-HAk"/>
-                            <constraint firstItem="QSE-rP-72S" firstAttribute="top" secondItem="aDl-7d-b3D" secondAttribute="bottom" id="Gxk-Tr-5Z7"/>
+                            <constraint firstItem="IzX-RK-eIR" firstAttribute="top" secondItem="aDl-7d-b3D" secondAttribute="bottom" constant="115" id="ITh-Bd-cjd"/>
+                            <constraint firstItem="IzX-RK-eIR" firstAttribute="leading" secondItem="nkf-3K-wdv" secondAttribute="leading" id="J4L-da-ugd"/>
                             <constraint firstItem="II6-YY-SRL" firstAttribute="centerX" secondItem="nkf-3K-wdv" secondAttribute="centerX" id="KlD-Zr-lwo"/>
                             <constraint firstItem="II6-YY-SRL" firstAttribute="top" secondItem="aDl-7d-b3D" secondAttribute="bottom" constant="142" id="NNV-wB-Ngy"/>
-                            <constraint firstItem="QSE-rP-72S" firstAttribute="leading" secondItem="nkf-3K-wdv" secondAttribute="leading" id="WfV-At-NIH"/>
                             <constraint firstItem="mBS-fM-fKT" firstAttribute="centerX" secondItem="nkf-3K-wdv" secondAttribute="centerX" id="gCX-kh-4aa"/>
                             <constraint firstItem="mBS-fM-fKT" firstAttribute="top" secondItem="aDl-7d-b3D" secondAttribute="bottom" constant="20" id="mht-ZQ-frJ"/>
                             <constraint firstItem="ecR-aW-nEC" firstAttribute="leading" secondItem="nkf-3K-wdv" secondAttribute="leadingMargin" constant="20" id="vNf-B2-orA"/>
+                            <constraint firstAttribute="trailing" secondItem="IzX-RK-eIR" secondAttribute="trailing" id="zdb-pV-akb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="NEW CLIENT" id="GB2-Cx-Z7x">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="0aq-B2-afK">
+                    <navigationItem key="navigationItem" title="NEW CLIENT" id="Bkt-BE-xK2">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="hh1-vd-S4O">
                             <connections>
-                                <action selector="closeView:" destination="Bpa-6O-VMt" id="bfr-z4-eR6"/>
+                                <action selector="closeView:" destination="Bpa-6O-VMt" id="EUf-Jf-UNL"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="S7L-5J-N0j">
-                            <color key="tintColor" red="0.38431372549019605" green="0.87058823529411766" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="mV7-Hb-p4z">
                             <connections>
-                                <action selector="addClient:" destination="Bpa-6O-VMt" id="Psw-i6-kYv"/>
+                                <action selector="addClient:" destination="Bpa-6O-VMt" id="0Sl-b9-2o8"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO">
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </simulatedNavigationBarMetrics>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="btnSave" destination="S7L-5J-N0j" id="g3p-Wh-nwl"/>
+                        <outlet property="btnSave" destination="mV7-Hb-p4z" id="Ba4-2J-QeH"/>
                         <outlet property="imgView" destination="mBS-fM-fKT" id="EWR-RX-gdQ"/>
                         <outlet property="labelChangePicture" destination="II6-YY-SRL" id="p37-Rm-I21"/>
                         <outlet property="txfEmail" destination="ZHP-yE-HqM" id="QJi-rB-CYS"/>
