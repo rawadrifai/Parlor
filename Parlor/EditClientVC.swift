@@ -48,7 +48,6 @@ class EditClientVC: UIViewController, UINavigationControllerDelegate, UIImagePic
         self.txfPhone.delegate = self
         
         makeProfilePicInteractive()
-        setBorders()
         resizeProfilePic()
         
         fillData()
@@ -65,30 +64,16 @@ class EditClientVC: UIViewController, UINavigationControllerDelegate, UIImagePic
     func resizeProfilePic() {
         
         // if there's an image
-        if (self.client.profileImg.imageUrl != "" || imgTapped) {
+        if (self.imgView.image != nil) {
             self.imgView.contentMode = .scaleAspectFill
+            self.imgView.layer.masksToBounds = true
         }
             // if there's no image (small camera icon, we want it to be center)
         else {
             self.imgView.contentMode = .center
         }
-        
-        self.imgView.layer.cornerRadius = 100
-        self.imgView.clipsToBounds = true
     }
     
-    func setBorders() {
-        
-        self.imgView.layer.cornerRadius = 100
-        self.imgView.clipsToBounds = true
-        
-        self.txfName.layer.cornerRadius = 20
-        self.txfPhone.layer.cornerRadius = 20
-        self.txfEmail.layer.cornerRadius = 20
-        
-        
-        
-    }
     
     
     var tmpPhone=""

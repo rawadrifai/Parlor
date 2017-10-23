@@ -38,16 +38,11 @@ class ClientDetailView: UITableViewController, UINavigationControllerDelegate, U
     
     @IBOutlet weak var btnNewHC: UIButton!
     @IBOutlet weak var imgView: UIImageView!
-    @IBOutlet weak var labelName: UILabel!
 
-    
-    @IBOutlet weak var labelLastVisit: UILabel!
     
     @IBOutlet weak var btnText: UIButton!
     @IBOutlet weak var btnPhone: UIButton!
     @IBOutlet weak var btnEmail: UIButton!
-    
-    @IBOutlet weak var labelCalendar: UILabel!
     
     @IBOutlet weak var labelChangePicture: UILabel!
     
@@ -132,6 +127,7 @@ class ClientDetailView: UITableViewController, UINavigationControllerDelegate, U
             
             EasyTipView.show(forView: self.btnNewHC, withinSuperview: self.navigationController?.view, text: TipViews.shared.newHcText, preferences: EasyTipView.globalPreferences, delegate: self)
         }
+        
     }
     
     func makeUIChanges() {
@@ -159,16 +155,14 @@ class ClientDetailView: UITableViewController, UINavigationControllerDelegate, U
     func resizeProfilePic() {
         
         // if there's an image
-        if (self.client.profileImg.imageUrl != "" || imgTapped) {
+        if (self.imgView.image != nil) {
             self.imgView.contentMode = .scaleAspectFill
+            self.imgView.layer.masksToBounds = true
         }
             // if there's no image (small camera icon, we want it to be center)
         else {
             self.imgView.contentMode = .center
         }
-        
-        self.imgView.layer.cornerRadius = 75
-        self.imgView.clipsToBounds = true
     }
     
     
@@ -327,7 +321,7 @@ class ClientDetailView: UITableViewController, UINavigationControllerDelegate, U
     @IBAction func visitsClicked(_ sender: UIButton) {
         moveLine(position: 0)
         isStarredSelected = false
-        btnAllVisits.setTitleColor(Commons.myColor, for: .normal)// UIColor.white, for: .normal)
+        btnAllVisits.setTitleColor(UIColor.black, for: .normal)
         btnStarred.setTitleColor(UIColor.lightGray, for: .normal)
         self.tableView.reloadData()
     }
@@ -337,7 +331,7 @@ class ClientDetailView: UITableViewController, UINavigationControllerDelegate, U
         moveLine(position: 1)
         isStarredSelected = true
         btnAllVisits.setTitleColor(UIColor.lightGray, for: .normal)
-        btnStarred.setTitleColor(Commons.myColor, for: .normal)//(UIColor.white, for: .normal)
+        btnStarred.setTitleColor(UIColor.black, for: .normal)
         self.tableView.reloadData()
 
         
@@ -714,7 +708,6 @@ extension ClientDetailView: EditClientDelegate {
         self.client.clientName = client.clientName
         self.client.clientEmail = client.clientEmail
         
-        self.labelName.text = client.clientName
         btnPhone.setTitle(client.clientPhone, for: .normal)
         
     }
@@ -788,16 +781,16 @@ extension ClientDetailView: EasyTipViewDelegate {
         switch tipView.text {
         case TipViews.shared.newHcText:
             
-            EasyTipView.show(forView: self.btnStarred, withinSuperview: self.navigationController?.view, text: TipViews.shared.favoritesText, preferences: EasyTipView.globalPreferences, delegate: self)
-            
-            break
-            
-        case TipViews.shared.favoritesText:
-            
             EasyTipView.show(animated: true, forItem: btnReminder, withinSuperview: self.navigationController?.view, text: TipViews.shared.remindersText, preferences: EasyTipView.globalPreferences, delegate: self)
-
             
             break
+            
+//        case TipViews.shared.favoritesText:
+//
+//            EasyTipView.show(animated: true, forItem: btnReminder, withinSuperview: self.navigationController?.view, text: TipViews.shared.remindersText, preferences: EasyTipView.globalPreferences, delegate: self)
+//
+//
+//            break
         default:
             break
         }

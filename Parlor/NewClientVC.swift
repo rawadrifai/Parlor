@@ -59,7 +59,6 @@ class NewClientVC: UIViewController, UINavigationControllerDelegate, UIImagePick
         
         getTrialClientsLimitFromFirebase()
         makeProfilePicInteractive()
-        setBorders()
         
         populateContact()
     }
@@ -106,10 +105,15 @@ class NewClientVC: UIViewController, UINavigationControllerDelegate, UIImagePick
     
     func resizeProfilePic() {
         
-        
-        self.imgView.contentMode = .scaleAspectFill
-        self.imgView.layer.cornerRadius = 100
-        self.imgView.clipsToBounds = true
+        // if there's an image
+        if (self.imgView.image != nil) {
+            self.imgView.contentMode = .scaleAspectFill
+            self.imgView.layer.masksToBounds = true
+        }
+            // if there's no image (small camera icon, we want it to be center)
+        else {
+            self.imgView.contentMode = .center
+        }
     }
     
     func makeProfilePicInteractive() {
@@ -122,12 +126,6 @@ class NewClientVC: UIViewController, UINavigationControllerDelegate, UIImagePick
         
     }
     
-    func setBorders() {
-
-        self.txfName.layer.cornerRadius = 20
-        self.txfPhone.layer.cornerRadius = 20
-        self.txfEmail.layer.cornerRadius = 20
-    }
     
     func getTrialClientsLimitFromFirebase() {
         
@@ -152,6 +150,16 @@ class NewClientVC: UIViewController, UINavigationControllerDelegate, UIImagePick
         
     }
     
+    
+    
+    @IBAction func txfNameEditingChanged(_ sender: UITextField) {
+        
+        if (txfName.text != nil) {
+            self.title = txfName.text
+        } else {
+            self.title = "NEW CLIENT"
+        }
+    }
     
     
     

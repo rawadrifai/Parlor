@@ -1,0 +1,6 @@
+framework module Pods_Parlor {
+  umbrella header "Pods-Parlor-umbrella.h"
+
+  export *
+  module * { export * }
+}

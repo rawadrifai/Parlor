@@ -28,7 +28,7 @@ class TipViews {
     
     let addClientText = "\nTap  '+'  to add new clients\n\nOK\n"
     let importClientText = "\nOr import from existing phone contacts\n\nOK\n"
-    let newHcText = "\nTap here to add a new visit\n\nOK\n"
+    let newHcText = "\nTap here for new visit\n\nOK\n"
     let remindersText = "\nSchedule a text reminder for next visit\n\nOK\n"
     let favoritesText = "\nFilter by client's favorite haircuts\n\nOK\n"
     let priceText = "\nSelect or enter exact charge for the visit\n\nOK\n"

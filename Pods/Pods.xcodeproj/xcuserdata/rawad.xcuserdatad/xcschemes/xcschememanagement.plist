@@ -59,7 +59,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Prossimo.xcscheme</key>
+		<key>Pods-Parlor.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -71,72 +71,6 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>107A9565F9DF88517DFD3E28C05B2B96</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>184A1650DC0B648BD756068E60BF2C59</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>681BE6E3D02A43F9BA63777AC435C8FD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>83B5B60C676A8D31829A6AE91CE86A75</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>86832B91E801BCA93835CF7A9B3E1167</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>90B4956B5DA8CFE54B547D232BF3136A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A08902AD8F47A860FFC624677A13D3C2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B1C4AAFAF49036C7007633DAA3C806AD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B97720AEDDAEC6569BE907F8D81E7EB7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C235F77E101E742652CCF98FFDFA5182</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D85C3D5A275CC39B0CEEC53C5FA8F233</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E0D597467F778F08C3A0FEBA63B6F513</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F20E05C81A764A1820295E05E974574F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

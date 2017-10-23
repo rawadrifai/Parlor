@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5691DCAE6B4BDB78738FFA44 /* Pods_Parlor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E2ACF842427166B54D7D44 /* Pods_Parlor.framework */; };
 		712C1A8D6E507F7AC790634F /* Pods_Prossimo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C5810A9DE4136D869B270F /* Pods_Prossimo.framework */; };
 		7905A6AA1EC655D10008D2ED /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7905A6A91EC655D10008D2ED /* Commons.swift */; };
 		7905A6B71EC663AE0008D2ED /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7905A6B61EC663AE0008D2ED /* FontAwesome.otf */; };
@@ -170,6 +171,7 @@
 
 /* Begin PBXFileReference section */
 		24C5810A9DE4136D869B270F /* Pods_Prossimo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prossimo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47AC9A67AD99A6965E741685 /* Pods-Parlor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parlor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Parlor/Pods-Parlor.release.xcconfig"; sourceTree = "<group>"; };
 		7905A6A91EC655D10008D2ED /* Commons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
 		7905A6B61EC663AE0008D2ED /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		7905A6CD1EC97C700008D2ED /* UIImageEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageEffects.swift; sourceTree = "<group>"; };
@@ -240,6 +242,8 @@
 		9AE7A1BE1EB4336A0004FCC2 /* NewClientVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewClientVC.swift; sourceTree = "<group>"; };
 		9AE7A1C71EB5A5080004FCC2 /* EditClientVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditClientVC.swift; sourceTree = "<group>"; };
 		A0F609DC844E3145CC67B243 /* Pods-Prossimo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prossimo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Prossimo/Pods-Prossimo.release.xcconfig"; sourceTree = "<group>"; };
+		AF57C64363CB334852F9CDC4 /* Pods-Parlor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parlor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Parlor/Pods-Parlor.debug.xcconfig"; sourceTree = "<group>"; };
+		D6E2ACF842427166B54D7D44 /* Pods_Parlor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parlor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D89157497824667341AC8B22 /* Pods-Prossimo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prossimo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Prossimo/Pods-Prossimo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -252,6 +256,7 @@
 				9A0E86511E9BF85C00F02BA6 /* Crashlytics.framework in Frameworks */,
 				9A0E86501E9BF85C00F02BA6 /* Fabric.framework in Frameworks */,
 				9A969D881E9D4C8D004127CE /* StoreKit.framework in Frameworks */,
+				5691DCAE6B4BDB78738FFA44 /* Pods_Parlor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +268,8 @@
 			children = (
 				D89157497824667341AC8B22 /* Pods-Prossimo.debug.xcconfig */,
 				A0F609DC844E3145CC67B243 /* Pods-Prossimo.release.xcconfig */,
+				AF57C64363CB334852F9CDC4 /* Pods-Parlor.debug.xcconfig */,
+				47AC9A67AD99A6965E741685 /* Pods-Parlor.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -275,6 +282,7 @@
 				9A0E864F1E9BF85C00F02BA6 /* Crashlytics.framework */,
 				9AD2B33A1E8AE50800DF308C /* Pods.xcodeproj */,
 				24C5810A9DE4136D869B270F /* Pods_Prossimo.framework */,
+				D6E2ACF842427166B54D7D44 /* Pods_Parlor.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -592,13 +600,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Parlor/Pods-Parlor-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Prossimo/Pods-Prossimo-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Parlor/Pods-Parlor-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9A0E86471E9BF7EE00F02BA6 /* ShellScript */ = {
@@ -620,13 +631,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Parlor-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F0DD158469BA70BB44D73A26 /* [CP] Embed Pods Frameworks */ = {
@@ -635,13 +649,36 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Parlor/Pods-Parlor-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DatePickerDialog/DatePickerDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/EasyTipView/EasyTipView.framework",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/FontAwesomeKit/FontAwesomeKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/JNKeychain/JNKeychain.framework",
+				"${BUILT_PRODUCTS_DIR}/NYTPhotoViewer/NYTPhotoViewer.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DatePickerDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyTipView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesomeKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JNKeychain.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NYTPhotoViewer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Prossimo/Pods-Prossimo-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Parlor/Pods-Parlor-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -849,7 +886,7 @@
 		};
 		9A3BC6571E5A9AA700E9CA71 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D89157497824667341AC8B22 /* Pods-Prossimo.debug.xcconfig */;
+			baseConfigurationReference = AF57C64363CB334852F9CDC4 /* Pods-Parlor.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -873,7 +910,7 @@
 		};
 		9A3BC6581E5A9AA700E9CA71 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0F609DC844E3145CC67B243 /* Pods-Prossimo.release.xcconfig */;
+			baseConfigurationReference = 47AC9A67AD99A6965E741685 /* Pods-Parlor.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
