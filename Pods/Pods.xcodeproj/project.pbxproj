@@ -320,7 +320,6 @@
 		21275A04095CD47C040FADFE8949FB83 /* GTMOAuth2Authentication.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMOAuth2Authentication.m; path = Source/GTMOAuth2Authentication.m; sourceTree = "<group>"; };
 		21469A8D6F8C1C85F433209B3F85FFBC /* GTMOAuth2ViewControllerTouch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMOAuth2ViewControllerTouch.m; path = Source/Touch/GTMOAuth2ViewControllerTouch.m; sourceTree = "<group>"; };
 		22A6BCAED0B94903DD1D53464513626F /* Core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Core.h; path = Headers/Core.h; sourceTree = "<group>"; };
-		248C92F836F0D58C3C98E4CF4476ECA8 /* CleverTapBuildInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CleverTapBuildInfo.h; path = CleverTapSDK.framework/Versions/A/Headers/CleverTapBuildInfo.h; sourceTree = "<group>"; };
 		24CC93BD4FC863C373DB8ED91D5BA63B /* GTMNSDictionary+URLArguments.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSDictionary+URLArguments.h"; path = "Foundation/GTMNSDictionary+URLArguments.h"; sourceTree = "<group>"; };
 		2646BB3A805FE69251584E531DD863BC /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		268B26E2619FD2B40931704A8B12486D /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = Frameworks/GoogleSignIn.framework; sourceTree = "<group>"; };
@@ -334,7 +333,6 @@
 		30E9D867FE5472614B069015A2ED523B /* NYTScalingImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NYTScalingImageView.h; path = Pod/Classes/ios/NYTScalingImageView.h; sourceTree = "<group>"; };
 		316D58E9CE1057E74BC0942A8168A76C /* DatePickerDialog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatePickerDialog.swift; path = Sources/DatePickerDialog.swift; sourceTree = "<group>"; };
 		33D547B324089DC622D5576CABEBBC27 /* DatePickerDialog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DatePickerDialog.xcconfig; sourceTree = "<group>"; };
-		33DFA3F3AE44DD1DF5EF6D60C9C222E0 /* CleverTapSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CleverTapSDK.framework; sourceTree = "<group>"; };
 		346003176CCEDAB312BBEADB6A006DF1 /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
 		351379EA6DE36E2BA63A49E41C54B2DF /* EasyTipView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyTipView-dummy.m"; sourceTree = "<group>"; };
 		366D420EC48E8E3D04AAD3873D81BFB4 /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
@@ -372,13 +370,13 @@
 		5626539EEA83B77F594E8678EAA04C4E /* FAKIcon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAKIcon.h; path = FontAwesomeKit/FAKIcon.h; sourceTree = "<group>"; };
 		566C76F413804A71AF3ED08A0ACEE71D /* NYTPhotosViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NYTPhotosViewController.m; path = Pod/Classes/ios/NYTPhotosViewController.m; sourceTree = "<group>"; };
 		567E1628ED9662BC6F4101E26824DD7D /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		56FEFD043544EC08C5E465DDC8B23EB7 /* CleverTapSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CleverTapSDK.framework; sourceTree = "<group>"; };
 		571C93977E78B304E249A70692700CB1 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
 		5796A14AA89B8C81B46ED0FDA735B409 /* DatePickerDialog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DatePickerDialog-dummy.m"; sourceTree = "<group>"; };
 		581C7AFDC6F16490A7303619F82E4A68 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A191A399F88D575AEA5F1622C833DC2 /* NYTPhotoCaptionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NYTPhotoCaptionView.m; path = Pod/Classes/ios/NYTPhotoCaptionView.m; sourceTree = "<group>"; };
 		5A28E0A765361E9D4CF5371EB2A10070 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5B11FA8BCB7E2B24BBA7A7C1AF8BB7FC /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B12CEA808E28A2C5C936A064BA28C4B /* CleverTap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CleverTap.h; path = CleverTapSDK.framework/Versions/A/Headers/CleverTap.h; sourceTree = "<group>"; };
 		5B530909A22BA4DFF873811EEC46657D /* Pods-Parlor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Parlor.release.xcconfig"; sourceTree = "<group>"; };
 		5D02720EAB3F40C79584E833CC946CE5 /* NYTPhotoContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NYTPhotoContainer.h; path = Pod/Classes/ios/Protocols/NYTPhotoContainer.h; sourceTree = "<group>"; };
 		5E3B467C5B58D2A2426CC24AAE976652 /* FLAnimatedImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FLAnimatedImage-umbrella.h"; sourceTree = "<group>"; };
@@ -500,15 +498,12 @@
 		CF76C5A169689461D79826D46EE27407 /* DatePickerDialog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DatePickerDialog.modulemap; sourceTree = "<group>"; };
 		D00E8602247DCFEF70D54AB9F7CDDD19 /* NSBundle+NYTPhotoViewer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+NYTPhotoViewer.h"; path = "Pod/Classes/ios/Resource Loading/NSBundle+NYTPhotoViewer.h"; sourceTree = "<group>"; };
 		D18E727D4E8700C79DD402E330FE66E2 /* FontAwesomeKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FontAwesomeKit.modulemap; sourceTree = "<group>"; };
-		D1BA444021DF79A636CCF164E4BAB676 /* CleverTapEventDetail.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CleverTapEventDetail.h; path = CleverTapSDK.framework/Versions/A/Headers/CleverTapEventDetail.h; sourceTree = "<group>"; };
 		D27EF6F96444B7BA29FB87E810B3CDE9 /* NYTPhotosViewControllerDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NYTPhotosViewControllerDataSource.h; path = Pod/Classes/ios/Protocols/NYTPhotosViewControllerDataSource.h; sourceTree = "<group>"; };
 		D28A7E8D2EB19A2745BA5515C352834C /* SDImageCacheConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCacheConfig.h; path = SDWebImage/SDImageCacheConfig.h; sourceTree = "<group>"; };
 		D32E787442AE3A236C4C73809F2088F1 /* GTMReadMonitorInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMReadMonitorInputStream.h; path = Source/GTMReadMonitorInputStream.h; sourceTree = "<group>"; };
 		D480BE5F78A0B42467E86FCEB168D5D6 /* GTMMIMEDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMMIMEDocument.h; path = Source/GTMMIMEDocument.h; sourceTree = "<group>"; };
 		D7FEF84FA2155DE870438E2FCE2D0C6E /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
-		D9398439F6477F718B2623BD99CE8900 /* CleverTapUTMDetail.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CleverTapUTMDetail.h; path = CleverTapSDK.framework/Versions/A/Headers/CleverTapUTMDetail.h; sourceTree = "<group>"; };
 		D9DA9D8186541B4EC03B0C0EB930E6BA /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
-		DBFC36581FDC8992DFCED7A185D5FC9A /* CleverTapInAppNotificationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CleverTapInAppNotificationDelegate.h; path = CleverTapSDK.framework/Versions/A/Headers/CleverTapInAppNotificationDelegate.h; sourceTree = "<group>"; };
 		DCE6DD27B01E2B6CDDF85F65777AEE7C /* EasyTipView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyTipView.swift; path = Source/EasyTipView.swift; sourceTree = "<group>"; };
 		DEC2E79C8914E193A23F9C82971823F4 /* GTMOAuth2ViewControllerTouch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMOAuth2ViewControllerTouch.h; path = Source/Touch/GTMOAuth2ViewControllerTouch.h; sourceTree = "<group>"; };
 		DF013A86F03E4845E3D0F46AF920802E /* JNKeychain.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JNKeychain.modulemap; sourceTree = "<group>"; };
@@ -535,7 +530,6 @@
 		F5E9FB3EA04B7A0E8DE540AB3DF7C61F /* DatePickerDialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DatePickerDialog.framework; path = DatePickerDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B259B341DC72A8818B31BB0593D34C /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/UIImage+GIF.m"; sourceTree = "<group>"; };
 		F8D93F5A6EF7B275ECEC4F956F4FB2AD /* GTMSessionFetcherService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherService.m; path = Source/GTMSessionFetcherService.m; sourceTree = "<group>"; };
-		FB07441B6709FEB38775D44EAEEC276C /* CleverTapSyncDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CleverTapSyncDelegate.h; path = CleverTapSDK.framework/Versions/A/Headers/CleverTapSyncDelegate.h; sourceTree = "<group>"; };
 		FB96A7C120391767C85B4621A6832B53 /* FAKFontAwesome.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAKFontAwesome.m; path = FontAwesomeKit/FAKFontAwesome.m; sourceTree = "<group>"; };
 		FBC44E5D4572EC6488D8150DB379D3CF /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBE403A337A3B9F0DE7CA731AF5125D4 /* GTMSessionFetcherLogging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherLogging.m; path = Source/GTMSessionFetcherLogging.m; sourceTree = "<group>"; };
@@ -778,6 +772,14 @@
 			path = IQKeyboardManagerSwift;
 			sourceTree = "<group>";
 		};
+		3394EDE1BA0A818EAE2DE83F3146246E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56FEFD043544EC08C5E465DDC8B23EB7 /* CleverTapSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		38ECC6C8418C982D20AF9DA5463369B0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -835,6 +837,14 @@
 				77318812B1676AD1A9872B13FBCD1D9C /* GTMSessionUploadFetcher.m */,
 			);
 			name = Core;
+			sourceTree = "<group>";
+		};
+		53611FA35E59C982CB93D4C478E13999 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3394EDE1BA0A818EAE2DE83F3146246E /* Frameworks */,
+			);
+			name = Main;
 			sourceTree = "<group>";
 		};
 		539EEDFC134A15905EB69C370D0BD5D5 /* FirebaseInstanceID */ = {
@@ -916,6 +926,15 @@
 			path = "../Target Support Files/FontAwesomeKit";
 			sourceTree = "<group>";
 		};
+		664A88F7301F8E5AEF83AF1C33F1C010 /* CleverTap-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				53611FA35E59C982CB93D4C478E13999 /* Main */,
+			);
+			name = "CleverTap-iOS-SDK";
+			path = "CleverTap-iOS-SDK";
+			sourceTree = "<group>";
+		};
 		708C19D5B13CB3E2E753B68AC625EE67 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -988,14 +1007,6 @@
 			);
 			name = SDWebImage;
 			path = SDWebImage;
-			sourceTree = "<group>";
-		};
-		87B21F5230CA16C7F57E455DB9C04BC9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				33DFA3F3AE44DD1DF5EF6D60C9C222E0 /* CleverTapSDK.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		87DD3F89871932A75B13F9877A074353 /* Support Files */ = {
@@ -1082,20 +1093,6 @@
 			);
 			name = EasyTipView;
 			path = EasyTipView;
-			sourceTree = "<group>";
-		};
-		989EDAD94F4F4A8E9E8FE731D28BCFC5 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				5B12CEA808E28A2C5C936A064BA28C4B /* CleverTap.h */,
-				248C92F836F0D58C3C98E4CF4476ECA8 /* CleverTapBuildInfo.h */,
-				D1BA444021DF79A636CCF164E4BAB676 /* CleverTapEventDetail.h */,
-				DBFC36581FDC8992DFCED7A185D5FC9A /* CleverTapInAppNotificationDelegate.h */,
-				FB07441B6709FEB38775D44EAEEC276C /* CleverTapSyncDelegate.h */,
-				D9398439F6477F718B2623BD99CE8900 /* CleverTapUTMDetail.h */,
-				87B21F5230CA16C7F57E455DB9C04BC9 /* Frameworks */,
-			);
-			name = Main;
 			sourceTree = "<group>";
 		};
 		99DE53487FA13130A930D69023912B6B /* Frameworks */ = {
@@ -1229,7 +1226,7 @@
 		CA272EF7FC8C547CAECA11B650A377DA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FF297D73F157E3ADFE7219200EA15A4F /* CleverTap-iOS-SDK */,
+				664A88F7301F8E5AEF83AF1C33F1C010 /* CleverTap-iOS-SDK */,
 				2524C07F452D7B243EF1C144F1F497CE /* DatePickerDialog */,
 				97F77E6B29D61EEBA185BC02BA876AA5 /* EasyTipView */,
 				CC766E5CA9F9B7F8AEBF82BE61964028 /* Firebase */,
@@ -1472,15 +1469,6 @@
 			);
 			name = JNKeychain;
 			path = JNKeychain;
-			sourceTree = "<group>";
-		};
-		FF297D73F157E3ADFE7219200EA15A4F /* CleverTap-iOS-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				989EDAD94F4F4A8E9E8FE731D28BCFC5 /* Main */,
-			);
-			name = "CleverTap-iOS-SDK";
-			path = "CleverTap-iOS-SDK";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

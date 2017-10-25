@@ -65,7 +65,7 @@
                                         </constraints>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="phonePad"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                         <connections>
                                             <action selector="txfPhoneEditingChanged:" destination="Bpa-6O-VMt" eventType="editingChanged" id="H37-Yi-ewp"/>
                                         </connections>

@@ -175,7 +175,7 @@ class ExpenseDetailsTVC: UITableViewController {
 
     @IBAction func btnCalendarClick(_ sender: UIButton) {
         
-        DatePickerDialog().show(title: "DatePicker", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: .date) {
+        DatePickerDialog().show("DatePicker", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: .date) {
             (date) -> Void in
             
             guard date != nil else {
