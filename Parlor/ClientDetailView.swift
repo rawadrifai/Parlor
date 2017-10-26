@@ -518,6 +518,14 @@ class ClientDetailView: UITableViewController, UINavigationControllerDelegate, U
         
         if segue.identifier == "editClientSegue" {
             
+            guard let destinationNavigationController = segue.destination as? UINavigationController else { return }
+            guard let targetController = destinationNavigationController.topViewController as? NewClientVC else { return }
+            
+            targetController.userId = self.userId
+            targetController.numberOfClients = self.tableView.numberOfRows(inSection: 0)
+            targetController.delegate = self
+            
+            
             // set the userId
             if let destination = segue.destination as? EditClientVC {
                 
@@ -708,8 +716,7 @@ extension ClientDetailView: EditClientDelegate {
         self.client.clientName = client.clientName
         self.client.clientEmail = client.clientEmail
         
-        btnPhone.setTitle(client.clientPhone, for: .normal)
-        
+        self.title = self.client.clientName
     }
     
     
@@ -785,12 +792,6 @@ extension ClientDetailView: EasyTipViewDelegate {
             
             break
             
-//        case TipViews.shared.favoritesText:
-//
-//            EasyTipView.show(animated: true, forItem: btnReminder, withinSuperview: self.navigationController?.view, text: TipViews.shared.remindersText, preferences: EasyTipView.globalPreferences, delegate: self)
-//
-//
-//            break
         default:
             break
         }

@@ -265,6 +265,7 @@ class ClientsView: UITableViewController, UISearchResultsUpdating {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        
         if segue.identifier == "clientDetailsSegue" {
             
             if let destination = segue.destination as? ClientDetailView {
@@ -301,16 +302,19 @@ class ClientsView: UITableViewController, UISearchResultsUpdating {
         }
             // set userId if we're going to add a client
         else if segue.identifier == "newClientSegue" {
-            if let destination = segue.destination as? NewClientVC {
-                destination.userId = self.userId
-                destination.numberOfClients = self.tableView.numberOfRows(inSection: 0)
-                destination.delegate = self
+            
+            
+            guard let destinationNavigationController = segue.destination as? UINavigationController else { return }
+            guard let targetController = destinationNavigationController.topViewController as? NewClientVC else { return }
+            
+                targetController.userId = self.userId
+                targetController.numberOfClients = self.tableView.numberOfRows(inSection: 0)
+                targetController.delegate = self
                 
                 if importClicked {
                     
-                    destination.contact = contactToImport
+                    targetController.contact = contactToImport
                 }
-            }
         }
     }
     

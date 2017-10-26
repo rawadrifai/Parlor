@@ -23,7 +23,7 @@ extension EditClientVC: UITextFieldDelegate {
     }
 }
 
-class EditClientVC: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class EditClientVC: UITableViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     var delegate: EditClientDelegate?
     
@@ -276,11 +276,6 @@ class EditClientVC: UIViewController, UINavigationControllerDelegate, UIImagePic
         self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func closeView(_ sender: UIBarButtonItem) {
-        
-        
-        let _ = self.navigationController?.popViewController(animated: true)
-    }
     
 }
 

@@ -23,7 +23,7 @@ extension NewClientVC: UITextFieldDelegate {
     }
 }
 
-class NewClientVC: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class NewClientVC: UITableViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     var delegate: NewClientDelegate?
     
@@ -307,7 +307,9 @@ class NewClientVC: UIViewController, UINavigationControllerDelegate, UIImagePick
             }
                 // if subsc is pro
             else {
+                
                 let _ = self.navigationController?.popViewController(animated: true)
+                dismiss(animated: true, completion: nil)
             }
             
         }
@@ -347,6 +349,7 @@ class NewClientVC: UIViewController, UINavigationControllerDelegate, UIImagePick
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: { (action: UIAlertAction!) in
             
             let _ = self.navigationController?.popViewController(animated: true)
+            self.dismiss(animated: true, completion: nil)
             
         }))
         self.present(alert, animated: true, completion: nil)
@@ -359,7 +362,9 @@ class NewClientVC: UIViewController, UINavigationControllerDelegate, UIImagePick
     }
     
     @IBAction func closeView(_ sender: UIBarButtonItem) {
+        
         let _ = self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
     
     

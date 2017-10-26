@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5691DCAE6B4BDB78738FFA44 /* Pods_Parlor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E2ACF842427166B54D7D44 /* Pods_Parlor.framework */; };
-		712C1A8D6E507F7AC790634F /* Pods_Prossimo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C5810A9DE4136D869B270F /* Pods_Prossimo.framework */; };
 		7905A6AA1EC655D10008D2ED /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7905A6A91EC655D10008D2ED /* Commons.swift */; };
 		7905A6B71EC663AE0008D2ED /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7905A6B61EC663AE0008D2ED /* FontAwesome.otf */; };
 		7905A6CE1EC97C700008D2ED /* UIImageEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7905A6CD1EC97C700008D2ED /* UIImageEffects.swift */; };
@@ -153,6 +152,13 @@
 			remoteGlobalIDString = 270067C20222032BD3F19C39F998732E;
 			remoteInfo = JNKeychain;
 		};
+		9A9C46F31FA13B27002213BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AD2B33A1E8AE50800DF308C /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6C031D5E65AF8AA431B87DAAC488F20A;
+			remoteInfo = "Pods-Parlor";
+		};
 		9AAFE62E1E96FFA2007185A0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9AD2B33A1E8AE50800DF308C /* Pods.xcodeproj */;
@@ -160,17 +166,9 @@
 			remoteGlobalIDString = C1C3A1F3151E2A6B9195EE4A64EEE7F8;
 			remoteInfo = FontAwesomeKit;
 		};
-		9AD2B35D1E8B51BC00DF308C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9AD2B33A1E8AE50800DF308C /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C30A619348FE2B9BC193A54811D763D4;
-			remoteInfo = "Pods-Prossimo";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		24C5810A9DE4136D869B270F /* Pods_Prossimo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prossimo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47AC9A67AD99A6965E741685 /* Pods-Parlor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parlor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Parlor/Pods-Parlor.release.xcconfig"; sourceTree = "<group>"; };
 		7905A6A91EC655D10008D2ED /* Commons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
 		7905A6B61EC663AE0008D2ED /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
@@ -241,10 +239,8 @@
 		9AD6764F1E94A0FD00F8BBFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Parlor/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		9AE7A1BE1EB4336A0004FCC2 /* NewClientVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewClientVC.swift; sourceTree = "<group>"; };
 		9AE7A1C71EB5A5080004FCC2 /* EditClientVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditClientVC.swift; sourceTree = "<group>"; };
-		A0F609DC844E3145CC67B243 /* Pods-Prossimo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prossimo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Prossimo/Pods-Prossimo.release.xcconfig"; sourceTree = "<group>"; };
 		AF57C64363CB334852F9CDC4 /* Pods-Parlor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parlor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Parlor/Pods-Parlor.debug.xcconfig"; sourceTree = "<group>"; };
 		D6E2ACF842427166B54D7D44 /* Pods_Parlor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parlor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D89157497824667341AC8B22 /* Pods-Prossimo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prossimo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Prossimo/Pods-Prossimo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,7 +248,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				712C1A8D6E507F7AC790634F /* Pods_Prossimo.framework in Frameworks */,
 				9A0E86511E9BF85C00F02BA6 /* Crashlytics.framework in Frameworks */,
 				9A0E86501E9BF85C00F02BA6 /* Fabric.framework in Frameworks */,
 				9A969D881E9D4C8D004127CE /* StoreKit.framework in Frameworks */,
@@ -266,8 +261,6 @@
 		48218D1D823D880B272EF557 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D89157497824667341AC8B22 /* Pods-Prossimo.debug.xcconfig */,
-				A0F609DC844E3145CC67B243 /* Pods-Prossimo.release.xcconfig */,
 				AF57C64363CB334852F9CDC4 /* Pods-Parlor.debug.xcconfig */,
 				47AC9A67AD99A6965E741685 /* Pods-Parlor.release.xcconfig */,
 			);
@@ -281,7 +274,6 @@
 				9A0E864E1E9BF85C00F02BA6 /* Fabric.framework */,
 				9A0E864F1E9BF85C00F02BA6 /* Crashlytics.framework */,
 				9AD2B33A1E8AE50800DF308C /* Pods.xcodeproj */,
-				24C5810A9DE4136D869B270F /* Pods_Prossimo.framework */,
 				D6E2ACF842427166B54D7D44 /* Pods_Parlor.framework */,
 			);
 			name = Frameworks;
@@ -390,7 +382,7 @@
 				9A911F231EA5E969004D221C /* JNKeychain.framework */,
 				9A371A451EB9A84B00A52DDD /* NYTPhotoViewer.framework */,
 				9A371A471EB9A84B00A52DDD /* NYTPhotoViewer.bundle */,
-				9AD2B35E1E8B51BC00DF308C /* Pods_Prossimo.framework */,
+				9A9C46F41FA13B27002213BA /* Pods_Parlor.framework */,
 				9A63D3301E945AF200F67805 /* SDWebImage.framework */,
 			);
 			name = Products;
@@ -548,18 +540,18 @@
 			remoteRef = 9A911F221EA5E969004D221C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		9A9C46F41FA13B27002213BA /* Pods_Parlor.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_Parlor.framework;
+			remoteRef = 9A9C46F31FA13B27002213BA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		9AAFE62F1E96FFA2007185A0 /* FontAwesomeKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = FontAwesomeKit.framework;
 			remoteRef = 9AAFE62E1E96FFA2007185A0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9AD2B35E1E8B51BC00DF308C /* Pods_Prossimo.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Pods_Prossimo.framework;
-			remoteRef = 9AD2B35D1E8B51BC00DF308C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -640,7 +632,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F0DD158469BA70BB44D73A26 /* [CP] Embed Pods Frameworks */ = {

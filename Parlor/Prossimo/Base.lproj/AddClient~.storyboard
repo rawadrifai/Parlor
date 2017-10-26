@@ -17,15 +17,6 @@
         <!--Clients-->
         <scene sceneID="4AB-gc-XS9">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KTC-C4-f12" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="Gic-RT-EUo">
-                    <connections>
-                        <outlet property="delegate" destination="ziU-oG-owb" id="a7M-Lb-hAB"/>
-                        <outlet property="searchContentsController" destination="ziU-oG-owb" id="RrY-Xe-W4V"/>
-                        <outlet property="searchResultsDataSource" destination="ziU-oG-owb" id="BLU-vS-sBv"/>
-                        <outlet property="searchResultsDelegate" destination="ziU-oG-owb" id="VJh-LV-EnB"/>
-                    </connections>
-                </searchDisplayController>
                 <tableViewController storyboardIdentifier="idClientsView" id="ziU-oG-owb" customClass="ClientsView" customModule="Parlor" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="78" sectionHeaderHeight="28" sectionFooterHeight="28" id="wtp-iS-dcW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -59,7 +50,7 @@
                         <barButtonItem key="leftBarButtonItem" id="uoJ-4t-eqB"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="1d2-M4-JZb">
                             <connections>
-                                <segue destination="Jzp-1Y-k6F" kind="show" identifier="newClientSegue" id="wsI-Ic-Z5D"/>
+                                <segue destination="oFJ-eh-a8T" kind="show" id="JFw-bj-pgb"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -75,6 +66,15 @@
                         <segue destination="mwm-fM-YI3" kind="show" identifier="clientDetailsSegue" id="TVX-aX-8z0"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KTC-C4-f12" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="Gic-RT-EUo">
+                    <connections>
+                        <outlet property="delegate" destination="ziU-oG-owb" id="a7M-Lb-hAB"/>
+                        <outlet property="searchContentsController" destination="ziU-oG-owb" id="RrY-Xe-W4V"/>
+                        <outlet property="searchResultsDataSource" destination="ziU-oG-owb" id="BLU-vS-sBv"/>
+                        <outlet property="searchResultsDelegate" destination="ziU-oG-owb" id="VJh-LV-EnB"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="2044" y="-796.55172413793105"/>
         </scene>
@@ -84,7 +84,35 @@
                 <viewControllerPlaceholder storyboardName="NewClient" id="Jzp-1Y-k6F" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bqa-gq-F5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2743" y="-1027"/>
+            <point key="canvasLocation" x="2706" y="-952"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="UMf-40-eH8">
+            <objects>
+                <tableViewController id="oFJ-eh-a8T" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ARn-Zr-x4a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fDG-Vb-gpa">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fDG-Vb-gpa" id="EPK-wW-JJW">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="oFJ-eh-a8T" id="bSr-h5-nMO"/>
+                            <outlet property="delegate" destination="oFJ-eh-a8T" id="ptJ-K7-9S8"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JUG-69-yzY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3074" y="-871"/>
         </scene>
         <!--ClientDetail-->
         <scene sceneID="Kk4-0i-3Ku">
