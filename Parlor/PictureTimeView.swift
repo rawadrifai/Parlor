@@ -73,7 +73,7 @@ class PictureTimeView: UITableViewController, UINavigationControllerDelegate, UI
                 // if first time user
                 UserDefaults.standard.set(version, forKey: "PictureTimeView")
                 
-                EasyTipView.show(forView: self.btnPrice1, withinSuperview: self.navigationController?.view, text: TipViews.shared.priceText, preferences: EasyTipView.globalPreferences, delegate: self)
+                EasyTipView.show(forView: self.txvNotes, withinSuperview: self.navigationController?.view, text: TipViews.shared.notesText, preferences: EasyTipView.globalPreferences, delegate: self)
 
                 return
         }
@@ -82,7 +82,7 @@ class PictureTimeView: UITableViewController, UINavigationControllerDelegate, UI
             
             UserDefaults.standard.set(version, forKey: "PictureTimeView")
             
-            EasyTipView.show(forView: self.btnPrice1, withinSuperview: self.navigationController?.view, text: TipViews.shared.priceText, preferences: EasyTipView.globalPreferences, delegate: self)
+            EasyTipView.show(forView: self.txvNotes, withinSuperview: self.navigationController?.view, text: TipViews.shared.notesText, preferences: EasyTipView.globalPreferences, delegate: self)
         }
     }
     
@@ -684,21 +684,8 @@ extension PictureTimeView: EasyTipViewDelegate {
         
         switch tipView.text {
             
-        case TipViews.shared.priceText:
-            
-            EasyTipView.show(forView: self.txvNotes, withinSuperview: self.navigationController?.view, text: TipViews.shared.notesText, preferences: EasyTipView.globalPreferences, delegate: self)
-            
-            break
-            
             
         case TipViews.shared.notesText:
-            
-            EasyTipView.show(forView: self.btnMale, withinSuperview: self.navigationController?.view, text: TipViews.shared.stylesText, preferences: EasyTipView.globalPreferences, delegate: self)
-            
-            break
-            
-            
-        case TipViews.shared.stylesText:
             
             EasyTipView.show(forView: self.btnCamera, withinSuperview: self.navigationController?.view, text: TipViews.shared.picturesText, preferences: EasyTipView.globalPreferences, delegate: self)
             

@@ -518,44 +518,33 @@ class ClientDetailView: UITableViewController, UINavigationControllerDelegate, U
         
         if segue.identifier == "editClientSegue" {
             
-            guard let destinationNavigationController = segue.destination as? UINavigationController else { return }
-            guard let targetController = destinationNavigationController.topViewController as? NewClientVC else { return }
+        //    guard let destinationNavigationController = segue.destination as? UINavigationController else { return }
+        //    guard let targetController = destinationNavigationController.topViewController as? EditClientVC else { return }
+            guard let destination = segue.destination as? EditClientVC else { return }
+
+            destination.userId = self.userId
+            destination.client = self.client
+            destination.delegate = self
             
-            targetController.userId = self.userId
-            targetController.numberOfClients = self.tableView.numberOfRows(inSection: 0)
-            targetController.delegate = self
-            
-            
-            // set the userId
-            if let destination = segue.destination as? EditClientVC {
-                
-                destination.userId = self.userId
-                destination.client = self.client
-                destination.delegate = self
-            }
         }
         else if segue.identifier == "pictureTimeSegue" {
             
             // set the userId
-            if let destination = segue.destination as? PictureTimeView {
+            guard let destination = segue.destination as? PictureTimeView else { return }
                 
-                destination.userId = self.userId
-                destination.client = self.client
-                destination.selectedVisitIndex = self.selectedVisitIndex
-                destination.delegate = self
-            }
+            destination.userId = self.userId
+            destination.client = self.client
+            destination.selectedVisitIndex = self.selectedVisitIndex
+            destination.delegate = self
+            
         } else if segue.identifier == "remindersSegue" {
             
             // set the userId
-            if let destination = segue.destination as? RemindersVC {
+            guard let destination = segue.destination as? RemindersVC else { return }
                 
-                destination.userId = self.userId
-                destination.client = self.client
-
-            }
+            destination.userId = self.userId
+            destination.client = self.client
         }
-        
-        
     }
     
 

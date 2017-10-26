@@ -253,7 +253,7 @@
                 <viewControllerPlaceholder storyboardName="HaircutDetail" id="atB-vL-dlz" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="thx-LU-UgX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3158" y="-122"/>
+            <point key="canvasLocation" x="3157" y="-98"/>
         </scene>
     </scenes>
     <resources>
