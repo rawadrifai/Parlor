@@ -96,7 +96,6 @@ class PictureTimeView: UITableViewController, UINavigationControllerDelegate, UI
             starIconImage = FAKFontAwesome.starOIcon(withSize: 25).image(with: CGSize(width: 35, height: 25))
         }
         
-        starIconImage = starIconImage.imageWithColor(color: Commons.myColor)!
         btnStar.image = starIconImage
         
     }
@@ -117,19 +116,16 @@ class PictureTimeView: UITableViewController, UINavigationControllerDelegate, UI
         
       
         // male icon
-        var maleIconImage = FAKFontAwesome.marsIcon(withSize: 28).image(with: CGSize(width: 40, height: 40))
-        maleIconImage = maleIconImage?.imageWithColor(color: Commons.myColor)
+        let maleIconImage = FAKFontAwesome.marsIcon(withSize: 28).image(with: CGSize(width: 40, height: 40))
         btnMale.setImage(maleIconImage, for: .normal)
         
         
         // female icon
-        var femaleIconImage = FAKFontAwesome.venusIcon(withSize: 28).image(with: CGSize(width: 40, height: 40))
-        femaleIconImage = femaleIconImage?.imageWithColor(color: Commons.myPinkColor)
+        let femaleIconImage = FAKFontAwesome.venusIcon(withSize: 28).image(with: CGSize(width: 40, height: 40))
         btnFemale.setImage(femaleIconImage, for: .normal)
         
         
-        var cameraIconImage = FAKFontAwesome.cameraIcon(withSize: 35).image(with: CGSize(width: 40, height: 40))
-        cameraIconImage = cameraIconImage?.imageWithColor(color: UIColor.darkGray)
+        let cameraIconImage = FAKFontAwesome.cameraIcon(withSize: 35).image(with: CGSize(width: 40, height: 40))
         btnCamera.setImage(cameraIconImage, for: .normal)
         
         
@@ -140,8 +136,8 @@ class PictureTimeView: UITableViewController, UINavigationControllerDelegate, UI
     func selectBtn(_ sender:UIButton, status:Bool) {
         
         if status {
-            sender.backgroundColor = Commons.myGrayColor
-            sender.setTitleColor(Commons.myColor, for: .normal)
+            sender.backgroundColor = UIColor.black
+            sender.setTitleColor(UIColor.white, for: .normal)
         } else {
             sender.backgroundColor = UIColor.groupTableViewBackground
             sender.setTitleColor(UIColor.lightGray, for: .normal)

@@ -43,7 +43,7 @@ class InfoView: UITableViewController {
         
         // seach icon
         var searchImage = FAKFontAwesome.addressBookOIcon(withSize: 30).image(with: CGSize(width: 30, height: 30))
-        searchImage = searchImage?.imageWithColor(color: Commons.myColor)
+//        searchImage = searchImage?.imageWithColor(color: Commons.myColor)
         tabBarItem.image = searchImage
         
 
@@ -85,7 +85,7 @@ class InfoView: UITableViewController {
         imageViewPP.image = privacyImage
         
         var upgradeImage = FAKFontAwesome.arrowCircleOUpIcon(withSize: 20).image(with: CGSize(width: 30, height: 30))
-        upgradeImage = upgradeImage?.imageWithColor(color: Commons.myDarkGreenColor)
+        upgradeImage = upgradeImage?.imageWithColor(color: UIColor.gray)
         
         imageViewUpgrade.image = upgradeImage
         

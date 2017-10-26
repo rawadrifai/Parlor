@@ -341,7 +341,7 @@ class UpgradeView: UIViewController {
     func enableBtnUpgrade(enabled:Bool) {
         if enabled {
             btnUpgrade.isEnabled = true
-            btnUpgrade.setTitleColor(Commons.myColor, for: .normal)
+            btnUpgrade.setTitleColor(UIColor.white, for: .normal)
         } else {
             btnUpgrade.isEnabled = false
             btnUpgrade.setTitleColor(UIColor.lightGray, for: .normal)
@@ -419,34 +419,34 @@ class UpgradeView: UIViewController {
             
         case Commons.monthlyProductId:
             
-            btnOneMonth.backgroundColor = Commons.myGrayColor
-            btnOneYear.backgroundColor = Commons.myLightLightGrayColor
-            btnLifeTime.backgroundColor = Commons.myLightLightGrayColor
-            btnRecommended.backgroundColor = Commons.myLightLightGrayColor
-            btnOneMonthPrice.backgroundColor = Commons.myGrayColor
-            btnOneYearPrice.backgroundColor = Commons.myLightLightGrayColor
-            btnLifeTimePrice.backgroundColor = Commons.myLightLightGrayColor
+            btnOneMonth.backgroundColor = UIColor.black
+            btnOneYear.backgroundColor = UIColor.white
+            btnLifeTime.backgroundColor = UIColor.white
+            btnRecommended.backgroundColor = UIColor.white
+            btnOneMonthPrice.backgroundColor = UIColor.black
+            btnOneYearPrice.backgroundColor = UIColor.white
+            btnLifeTimePrice.backgroundColor = UIColor.white
             
             
             btnOneMonth.setTitleColor(UIColor.white, for: .normal)
-            btnOneYear.setTitleColor(UIColor.lightGray, for: .normal)
-            btnLifeTime.setTitleColor(UIColor.lightGray, for: .normal)
-            btnRecommended.setTitleColor(UIColor.lightGray, for: .normal)
+            btnOneYear.setTitleColor(UIColor.black, for: .normal)
+            btnLifeTime.setTitleColor(UIColor.black, for: .normal)
+            btnRecommended.setTitleColor(UIColor.black, for: .normal)
             btnOneMonthPrice.setTitleColor(UIColor.white, for: .normal)
-            btnOneYearPrice.setTitleColor(UIColor.lightGray, for: .normal)
-            btnLifeTimePrice.setTitleColor(UIColor.lightGray, for: .normal)
+            btnOneYearPrice.setTitleColor(UIColor.black, for: .normal)
+            btnLifeTimePrice.setTitleColor(UIColor.black, for: .normal)
 
             break;
             
         case Commons.annualProductId:
             
-            btnOneMonth.backgroundColor = Commons.myLightLightGrayColor
-            btnOneYear.backgroundColor = Commons.myGrayColor
-            btnLifeTime.backgroundColor = Commons.myLightLightGrayColor
-            btnRecommended.backgroundColor = Commons.myGrayColor
-            btnOneMonthPrice.backgroundColor = Commons.myLightLightGrayColor
-            btnOneYearPrice.backgroundColor = Commons.myGrayColor
-            btnLifeTimePrice.backgroundColor = Commons.myLightLightGrayColor
+            btnOneMonth.backgroundColor = UIColor.white
+            btnOneYear.backgroundColor = UIColor.black
+            btnLifeTime.backgroundColor = UIColor.white
+            btnRecommended.backgroundColor = UIColor.black
+            btnOneMonthPrice.backgroundColor = UIColor.white
+            btnOneYearPrice.backgroundColor = UIColor.black
+            btnLifeTimePrice.backgroundColor = UIColor.white
             
             btnOneMonth.setTitleColor(UIColor.lightGray, for: .normal)
             btnOneYear.setTitleColor(UIColor.white, for: .normal)
@@ -460,13 +460,13 @@ class UpgradeView: UIViewController {
             
         case Commons.lifetimeProductId:
             
-            btnOneMonth.backgroundColor = Commons.myLightLightGrayColor
-            btnOneYear.backgroundColor = Commons.myLightLightGrayColor
-            btnLifeTime.backgroundColor = Commons.myGrayColor
-            btnRecommended.backgroundColor = Commons.myLightLightGrayColor
-            btnOneMonthPrice.backgroundColor = Commons.myLightLightGrayColor
-            btnOneYearPrice.backgroundColor = Commons.myLightLightGrayColor
-            btnLifeTimePrice.backgroundColor = Commons.myGrayColor
+            btnOneMonth.backgroundColor = UIColor.white
+            btnOneYear.backgroundColor = UIColor.white
+            btnLifeTime.backgroundColor = UIColor.black
+            btnRecommended.backgroundColor = UIColor.white
+            btnOneMonthPrice.backgroundColor = UIColor.white
+            btnOneYearPrice.backgroundColor = UIColor.white
+            btnLifeTimePrice.backgroundColor = UIColor.black
             
             btnOneMonth.setTitleColor(UIColor.lightGray, for: .normal)
             btnOneYear.setTitleColor(UIColor.lightGray, for: .normal)
@@ -479,13 +479,13 @@ class UpgradeView: UIViewController {
             break;
             
         default:
-            btnOneMonth.backgroundColor = Commons.myLightLightGrayColor
-            btnOneYear.backgroundColor = Commons.myLightLightGrayColor
-            btnLifeTime.backgroundColor = Commons.myLightLightGrayColor
-            btnRecommended.backgroundColor = Commons.myLightLightGrayColor
-            btnOneMonthPrice.backgroundColor = Commons.myLightLightGrayColor
-            btnOneYearPrice.backgroundColor = Commons.myLightLightGrayColor
-            btnLifeTimePrice.backgroundColor = Commons.myLightLightGrayColor
+            btnOneMonth.backgroundColor = UIColor.white
+            btnOneYear.backgroundColor = UIColor.white
+            btnLifeTime.backgroundColor = UIColor.white
+            btnRecommended.backgroundColor = UIColor.white
+            btnOneMonthPrice.backgroundColor = UIColor.white
+            btnOneYearPrice.backgroundColor = UIColor.white
+            btnLifeTimePrice.backgroundColor = UIColor.white
             
             btnOneMonth.setTitleColor(UIColor.lightGray, for: .normal)
             btnOneYear.setTitleColor(UIColor.lightGray, for: .normal)

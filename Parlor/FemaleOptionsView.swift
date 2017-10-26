@@ -66,8 +66,8 @@ class FemaleOptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btnLong.backgroundColor = Commons.myGrayColor
-                btnLong.setTitleColor(Commons.myPinkColor, for: .normal)
+                btnLong.backgroundColor = UIColor.black
+                btnLong.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -76,8 +76,8 @@ class FemaleOptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btnMedium.backgroundColor = Commons.myGrayColor
-                btnMedium.setTitleColor(Commons.myPinkColor, for: .normal)
+                btnMedium.backgroundColor = UIColor.black
+                btnMedium.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -86,8 +86,8 @@ class FemaleOptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btnShort.backgroundColor = Commons.myGrayColor
-                btnShort.setTitleColor(Commons.myPinkColor, for: .normal)
+                btnShort.backgroundColor = UIColor.black
+                btnShort.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -96,8 +96,8 @@ class FemaleOptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btnBlunt.backgroundColor = Commons.myGrayColor
-                btnBlunt.setTitleColor(Commons.myPinkColor, for: .normal)
+                btnBlunt.backgroundColor = UIColor.black
+                btnBlunt.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -106,8 +106,8 @@ class FemaleOptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btnTexturized.backgroundColor = Commons.myGrayColor
-                btnTexturized.setTitleColor(Commons.myPinkColor, for: .normal)
+                btnTexturized.backgroundColor = UIColor.black
+                btnTexturized.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -116,8 +116,8 @@ class FemaleOptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btnInnerLayers.backgroundColor = Commons.myGrayColor
-                btnInnerLayers.setTitleColor(Commons.myPinkColor, for: .normal)
+                btnInnerLayers.backgroundColor = UIColor.black
+                btnInnerLayers.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -126,8 +126,8 @@ class FemaleOptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btnBangs.backgroundColor = Commons.myGrayColor
-                btnBangs.setTitleColor(Commons.myPinkColor, for: .normal)
+                btnBangs.backgroundColor = UIColor.black
+                btnBangs.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -136,8 +136,8 @@ class FemaleOptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btnFaceFraming.backgroundColor = Commons.myGrayColor
-                btnFaceFraming.setTitleColor(Commons.myPinkColor, for: .normal)
+                btnFaceFraming.backgroundColor = UIColor.black
+                btnFaceFraming.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -146,8 +146,8 @@ class FemaleOptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btnColor.backgroundColor = Commons.myGrayColor
-                btnColor.setTitleColor(Commons.myPinkColor, for: .normal)
+                btnColor.backgroundColor = UIColor.black
+                btnColor.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -156,8 +156,8 @@ class FemaleOptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btnBlowDry.backgroundColor = Commons.myGrayColor
-                btnBlowDry.setTitleColor(Commons.myPinkColor, for: .normal)
+                btnBlowDry.backgroundColor = UIColor.black
+                btnBlowDry.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -174,8 +174,8 @@ class FemaleOptionsView: UIViewController {
         guard let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] else {
             
             self.client.clientVisits[selectedVisitIndex].options[btnText!] = "1"
-            sender.backgroundColor = Commons.myGrayColor
-            sender.setTitleColor(Commons.myPinkColor, for: .normal)
+            sender.backgroundColor = UIColor.black
+            sender.setTitleColor(UIColor.white, for: .normal)
             
             self.ref.child("users/" + self.userId + "/clients/" + self.client.clientId + "/visits/" + self.selectedVisit.visitDate + "/options/" + btnText!).setValue("1")
             
@@ -183,8 +183,8 @@ class FemaleOptionsView: UIViewController {
         }
         if state == "0" {
             self.client.clientVisits[selectedVisitIndex].options[btnText!] = "1"
-            sender.backgroundColor = Commons.myGrayColor
-            sender.setTitleColor(Commons.myPinkColor, for: .normal)
+            sender.backgroundColor = UIColor.black
+            sender.setTitleColor(UIColor.white, for: .normal)
             
             self.ref.child("users/" + self.userId + "/clients/" + self.client.clientId + "/visits/" + self.selectedVisit.visitDate + "/options/" + btnText!).setValue("1")
         }

@@ -82,8 +82,8 @@ class OptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btnScissor.backgroundColor = Commons.myGrayColor
-                btnScissor.setTitleColor(Commons.myColor, for: .normal)
+                btnScissor.backgroundColor = UIColor.black
+                btnScissor.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -92,8 +92,8 @@ class OptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btnClipper.backgroundColor = Commons.myGrayColor
-                btnClipper.setTitleColor(Commons.myColor, for: .normal)
+                btnClipper.backgroundColor = UIColor.black
+                btnClipper.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -102,8 +102,8 @@ class OptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btnTexturize.backgroundColor = Commons.myGrayColor
-                btnTexturize.setTitleColor(Commons.myColor, for: .normal)
+                btnTexturize.backgroundColor = UIColor.black
+                btnTexturize.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -112,8 +112,8 @@ class OptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btnSkin.backgroundColor = Commons.myGrayColor
-                btnSkin.setTitleColor(Commons.myColor, for: .normal)
+                btnSkin.backgroundColor = UIColor.black
+                btnSkin.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -122,8 +122,8 @@ class OptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btn0.backgroundColor = Commons.myGrayColor
-                btn0.setTitleColor(Commons.myColor, for: .normal)
+                btn0.backgroundColor = UIColor.black
+                btn0.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -132,8 +132,8 @@ class OptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btn12.backgroundColor = Commons.myGrayColor
-                btn12.setTitleColor(Commons.myColor, for: .normal)
+                btn12.backgroundColor = UIColor.black
+                btn12.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -142,8 +142,8 @@ class OptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btn1.backgroundColor = Commons.myGrayColor
-                btn1.setTitleColor(Commons.myColor, for: .normal)
+                btn1.backgroundColor = UIColor.black
+                btn1.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -152,8 +152,8 @@ class OptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btn2.backgroundColor = Commons.myGrayColor
-                btn2.setTitleColor(Commons.myColor, for: .normal)
+                btn2.backgroundColor = UIColor.black
+                btn2.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -162,8 +162,8 @@ class OptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btn3.backgroundColor = Commons.myGrayColor
-                btn3.setTitleColor(Commons.myColor, for: .normal)
+                btn3.backgroundColor = UIColor.black
+                btn3.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -172,8 +172,8 @@ class OptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btn4.backgroundColor = Commons.myGrayColor
-                btn4.setTitleColor(Commons.myColor, for: .normal)
+                btn4.backgroundColor = UIColor.black
+                btn4.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -182,8 +182,8 @@ class OptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btn5.backgroundColor = Commons.myGrayColor
-                btn5.setTitleColor(Commons.myColor, for: .normal)
+                btn5.backgroundColor = UIColor.black
+                btn5.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -192,8 +192,8 @@ class OptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btnHigh.backgroundColor = Commons.myGrayColor
-                btnHigh.setTitleColor(Commons.myColor, for: .normal)
+                btnHigh.backgroundColor = UIColor.black
+                btnHigh.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -202,8 +202,8 @@ class OptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btnLow.backgroundColor = Commons.myGrayColor
-                btnLow.setTitleColor(Commons.myColor, for: .normal)
+                btnLow.backgroundColor = UIColor.black
+                btnLow.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -212,8 +212,8 @@ class OptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btnTaper.backgroundColor = Commons.myGrayColor
-                btnTaper.setTitleColor(Commons.myColor, for: .normal)
+                btnTaper.backgroundColor = UIColor.black
+                btnTaper.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -222,8 +222,8 @@ class OptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btnNatural.backgroundColor = Commons.myGrayColor
-                btnNatural.setTitleColor(Commons.myColor, for: .normal)
+                btnNatural.backgroundColor = UIColor.black
+                btnNatural.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -232,8 +232,8 @@ class OptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btnRound.backgroundColor = Commons.myGrayColor
-                btnRound.setTitleColor(Commons.myColor, for: .normal)
+                btnRound.backgroundColor = UIColor.black
+                btnRound.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -242,8 +242,8 @@ class OptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btnSquare.backgroundColor = Commons.myGrayColor
-                btnSquare.setTitleColor(Commons.myColor, for: .normal)
+                btnSquare.backgroundColor = UIColor.black
+                btnSquare.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -252,8 +252,8 @@ class OptionsView: UIViewController {
         if let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] {
             if state == "1" {
                 
-                btnRoundedEdges.backgroundColor = Commons.myGrayColor
-                btnRoundedEdges.setTitleColor(Commons.myColor, for: .normal)
+                btnRoundedEdges.backgroundColor = UIColor.black
+                btnRoundedEdges.setTitleColor(UIColor.white, for: .normal)
             }
         }
         
@@ -269,8 +269,8 @@ class OptionsView: UIViewController {
         guard let state = self.client.clientVisits[selectedVisitIndex].options[btnText!] else {
             
             self.client.clientVisits[selectedVisitIndex].options[btnText!] = "1"
-            sender.backgroundColor = Commons.myGrayColor
-            sender.setTitleColor(Commons.myColor, for: .normal)
+            sender.backgroundColor = UIColor.black
+            sender.setTitleColor(UIColor.white, for: .normal)
             
             self.ref.child("users/" + self.userId + "/clients/" + self.client.clientId + "/visits/" + self.selectedVisit.visitDate + "/options/" + btnText!).setValue("1")
             
@@ -278,8 +278,8 @@ class OptionsView: UIViewController {
         }
         if state == "0" {
             self.client.clientVisits[selectedVisitIndex].options[btnText!] = "1"
-            sender.backgroundColor = Commons.myGrayColor
-            sender.setTitleColor(Commons.myColor, for: .normal)
+            sender.backgroundColor = UIColor.black
+            sender.setTitleColor(UIColor.white, for: .normal)
             
             self.ref.child("users/" + self.userId + "/clients/" + self.client.clientId + "/visits/" + self.selectedVisit.visitDate + "/options/" + btnText!).setValue("1")
         }

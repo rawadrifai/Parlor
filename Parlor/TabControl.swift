@@ -17,20 +17,17 @@ class TabControl: UITabBarController {
         let tabBarItems = tabBar.items!
         
         // seach icon
-        var searchImage = FAKFontAwesome.searchIcon(withSize: 25).image(with: CGSize(width: 30, height: 30))
-        searchImage = searchImage?.imageWithColor(color: Commons.myColor)
+        let searchImage = FAKFontAwesome.searchIcon(withSize: 25).image(with: CGSize(width: 30, height: 30))
         tabBarItems[0].image = searchImage
         tabBarItems[0].title = "Clients"
         
         // money icon
-        var moneyImage = FAKFontAwesome.dollarIcon(withSize: 25).image(with: CGSize(width: 30, height: 30))
-        moneyImage = moneyImage?.imageWithColor(color: Commons.myColor)
+        let moneyImage = FAKFontAwesome.dollarIcon(withSize: 25).image(with: CGSize(width: 30, height: 30))
         tabBarItems[1].image = moneyImage
         tabBarItems[1].title = "Expenses"
         
         // Info icon
-        var infoImage = FAKFontAwesome.infoCircleIcon(withSize: 28).image(with: CGSize(width: 30, height: 30))
-        infoImage = infoImage?.imageWithColor(color: Commons.myColor)
+        let infoImage = FAKFontAwesome.infoCircleIcon(withSize: 28).image(with: CGSize(width: 30, height: 30))
         tabBarItems[2].image = infoImage
         tabBarItems[2].title = "Info"
         
