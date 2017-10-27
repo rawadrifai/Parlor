@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseDatabase
 
-class FemaleOptionsView: UIViewController {
+class FemaleOptionsView: UITableViewController {
     
     
     var selectedVisitIndex:Int!
