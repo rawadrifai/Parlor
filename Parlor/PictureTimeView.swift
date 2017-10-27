@@ -339,7 +339,7 @@ class PictureTimeView: UITableViewController, UINavigationControllerDelegate, UI
             let imageView = tableView.cellForRow(at: indexPath)?.viewWithTag(1) as! UIImageView
             let image = imageView.image
             
-            InstagramManager.sharedManager.postImageToInstagramWithCaption(imageInstagram: image!, instagramCaption: "Posted from Prossimo", view: self.view)
+            InstagramManager.sharedManager.postImageToInstagramWithCaption(imageInstagram: image!, instagramCaption: "Posted from Parlor", view: self.view)
             
         }
         

@@ -34,8 +34,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         StoreManager.shared.setup()
         IQKeyboardManager.sharedManager().enable = true
         
-        //UITabBar.appearance().tintColor = Commons.myColor
-        
         
         return true
     }

@@ -1,6 +1,6 @@
 //
 //  ThirdVC.swift
-//  Prossimo
+//  Parlor
 //
 //  Created by Elrifai, Rawad on 4/24/17.
 //  Copyright © 2017 Elrifai, Rawad. All rights reserved.

@@ -15,7 +15,7 @@ class ExamplePhoto: NSObject, NYTPhoto {
     var imageData: Data?
     var placeholderImage: UIImage?
     let attributedCaptionTitle: NSAttributedString?
-    let attributedCaptionSummary: NSAttributedString? = NSAttributedString(string: "Prossimo (c)", attributes: [NSAttributedStringKey.foregroundColor: UIColor.gray])
+    let attributedCaptionSummary: NSAttributedString? = NSAttributedString(string: "Parlor (c)", attributes: [NSAttributedStringKey.foregroundColor: UIColor.gray])
     let attributedCaptionCredit: NSAttributedString? = NSAttributedString(string: "", attributes: [NSAttributedStringKey.foregroundColor: UIColor.darkGray])
 
     init(image: UIImage? = nil, imageData: NSData? = nil, attributedCaptionTitle: NSAttributedString) {

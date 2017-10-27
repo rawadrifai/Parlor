@@ -110,20 +110,19 @@ class Login: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
     
     func checkIfFirstTimeUse() {
         
-        //UserDefaults.standard.removeObject(forKey: "prossimoLastVersionUsed")
         
         guard let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String else { return }
         
-        guard let lastVersionUsed = UserDefaults.standard.string(forKey: "prossimoLastVersionUsed")
+        guard let lastVersionUsed = UserDefaults.standard.string(forKey: "parlorLastVersionUsed")
             else {
-                UserDefaults.standard.set(version, forKey: "prossimoLastVersionUsed")
+                UserDefaults.standard.set(version, forKey: "parlorLastVersionUsed")
                 self.performSegue(withIdentifier: "tutorialSegue", sender: self)
                 return
         }
         
         if version != lastVersionUsed {
             
-            UserDefaults.standard.set(version, forKey: "prossimoLastVersionUsed")
+            UserDefaults.standard.set(version, forKey: "parlorLastVersionUsed")
             self.performSegue(withIdentifier: "tutorialSegue", sender: self)
         }
     }

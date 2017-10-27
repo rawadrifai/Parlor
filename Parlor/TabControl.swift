@@ -1,6 +1,6 @@
 //
 //  TabControl.swift
-//  Prossimo
+//  Parlor
 //
 //  Created by Rawad Rifai on 5/31/17.
 //  Copyright © 2017 Elrifai, Rawad. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  Enums.swift
-//  Prossimo
+//  Parlor
 //
 //  Created by Rawad Rifai on 6/26/17.
 //  Copyright © 2017 Elrifai, Rawad. All rights reserved.

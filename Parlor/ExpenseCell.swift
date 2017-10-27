@@ -1,6 +1,6 @@
 //
 //  Expense.swift
-//  Prossimo
+//  Parlor
 //
 //  Created by Rawad Rifai on 6/3/17.
 //  Copyright © 2017 Elrifai, Rawad. All rights reserved.
