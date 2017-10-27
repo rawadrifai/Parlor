@@ -64,7 +64,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="Jt1-vL-2DG"/>
                                             </constraints>
-                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
                                             <connections>
@@ -90,7 +90,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="4QG-ad-GbI"/>
                                             </constraints>
-                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                             <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="phonePad"/>
                                             <connections>
@@ -116,7 +116,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="78S-rp-cSx"/>
                                             </constraints>
-                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                             <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
                                         </textField>

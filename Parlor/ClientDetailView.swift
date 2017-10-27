@@ -551,7 +551,7 @@ class ClientDetailView: UITableViewController, UINavigationControllerDelegate, U
     var imgTapped = false
 
     
-    func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
+    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
     {
     
         imgTapped = true

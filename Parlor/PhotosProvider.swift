@@ -41,7 +41,7 @@ class PhotosProvider: NSObject {
             for photoIndex in 0 ..< numberOfPhotos {
                 
                 image = images[photoIndex]
-                let title = NSAttributedString(string: "Photo " + String(photoIndex+1) + " of " + String(numberOfPhotos), attributes: [NSForegroundColorAttributeName: UIColor.white])
+                let title = NSAttributedString(string: "Photo " + String(photoIndex+1) + " of " + String(numberOfPhotos), attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
                 
                 let photo = shouldSetImageOnIndex(photoIndex: photoIndex) ? ExamplePhoto(image: image, attributedCaptionTitle: title) : ExamplePhoto(attributedCaptionTitle: title)
                 

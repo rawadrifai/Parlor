@@ -186,7 +186,7 @@ class NewClientVC: UITableViewController, UINavigationControllerDelegate, UIImag
     
     
     
-    func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
+    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
     {
         
         displayProfileImageAlert()

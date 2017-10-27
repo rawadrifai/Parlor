@@ -42,7 +42,7 @@ class InfoView: UITableViewController {
         
         
         // seach icon
-        var searchImage = FAKFontAwesome.addressBookOIcon(withSize: 30).image(with: CGSize(width: 30, height: 30))
+        let searchImage = FAKFontAwesome.addressBookOIcon(withSize: 30).image(with: CGSize(width: 30, height: 30))
 //        searchImage = searchImage?.imageWithColor(color: Commons.myColor)
         tabBarItem.image = searchImage
         

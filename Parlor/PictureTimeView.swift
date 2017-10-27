@@ -102,13 +102,12 @@ class PictureTimeView: UITableViewController, UINavigationControllerDelegate, UI
     
     func setBorders() {
         
-       // self.btnHaircutDetails.layer.borderWidth = 0.5
-       // self.btnHaircutDetails.layer.borderColor = UIColor.lightGray.cgColor
-        
         self.txvNotes.layer.borderWidth = 0.5
         self.txvNotes.layer.borderColor = UIColor.gray.cgColor
         self.txvNotes.layer.cornerRadius = 10
         self.txvNotes.clipsToBounds = true
+      
+
     }
     
     func setIcons() {
@@ -487,8 +486,6 @@ class PictureTimeView: UITableViewController, UINavigationControllerDelegate, UI
         // set notes, star and title
         self.txvNotes.text = self.client.clientVisits[selectedVisitIndex].notes
         setStarIcon(selected: self.client.clientVisits[selectedVisitIndex].starred)
-        //self.title = Commons.getHumanReadableDate(dateString: self.client.clientVisits[selectedVisitIndex].visitDate)
-        
         self.title = Commons.getHumanReadableDate(dateString: self.client.clientVisits[selectedVisitIndex].visitDate)
         
         let priceDouble = self.client.clientVisits[selectedVisitIndex].price

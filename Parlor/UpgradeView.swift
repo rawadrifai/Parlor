@@ -63,7 +63,7 @@ class UpgradeView: UIViewController {
     
     
     // after the products finish loading, we need to set the prices and enable the upgrade button
-    func productsFinishedLoading() {
+    @objc func productsFinishedLoading() {
         
         for product in StoreManager.shared.productsFromStore {
             
@@ -95,7 +95,7 @@ class UpgradeView: UIViewController {
     }
 
     
-    func productPurchased(notification:NSNotification) {
+    @objc func productPurchased(notification:NSNotification) {
         
         // get purchased product from notification
         let productDict = notification.userInfo
@@ -123,7 +123,7 @@ class UpgradeView: UIViewController {
         print("product purchased is " + productPurchased.productIdentifier)
     }
     
-    func productRestored(notification:NSNotification) {
+    @objc func productRestored(notification:NSNotification) {
         
         // get purchased product from notification
         let productDict = notification.userInfo
