@@ -57,7 +57,7 @@ class NewClientVC: UITableViewController, UINavigationControllerDelegate, UIImag
         
         self.txfPhone.delegate = self
         
-        getTrialClientsLimitFromFirebase()
+       // getTrialClientsLimitFromFirebase()
         makeProfilePicInteractive()
         
         populateContact()

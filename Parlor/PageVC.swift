@@ -46,7 +46,7 @@ class PageVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewCo
             if view is UIScrollView {
                 view.frame = UIScreen.main.bounds
             } else if view is UIPageControl {
-                view.backgroundColor = UIColor.clear
+                view.backgroundColor = UIColor.black
             }
         }
     }

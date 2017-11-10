@@ -17,7 +17,7 @@ class FinalVC: UIViewController {
         super.viewDidLoad()
 
         btnGetStarted.layer.borderWidth = 1
-        btnGetStarted.layer.borderColor = UIColor.white.cgColor
+        btnGetStarted.layer.borderColor = UIColor.black.cgColor
         btnGetStarted.layer.cornerRadius = 7
         btnGetStarted.clipsToBounds = true
     }

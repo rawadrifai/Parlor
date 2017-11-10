@@ -11,8 +11,8 @@ import FontAwesomeKit
 
 public class Commons {
     
-    static let monthlyProductId = "rifai.prossimo.ios.ppmonthly"
-    static let annualProductId = "rifai.prossimo.ios.ppannual"
+    static let monthlyProductId = "io.prlr.ppmonthly"
+    static let annualProductId = "DUT56SJCSN.com.parlorme.ppannual"
     static let lifetimeProductId = "rifai.prossimo.ios.pp"
     static let lifetimeDiscountedProductIds = ["rifai.prossimo.ios.pp00", "rifai.prossimo.ios.pp70"]
     

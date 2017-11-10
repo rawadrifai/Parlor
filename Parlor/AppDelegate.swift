@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Fabric.with([Crashlytics.self])
         CleverTap.autoIntegrate()
         
-        StoreManager.shared.setup()
+       // StoreManager.shared.setup()
         IQKeyboardManager.sharedManager().enable = true
         
         

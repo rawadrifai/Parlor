@@ -2266,7 +2266,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Parlor/NewClientVC.swift"
-            timestampString = "530439381.532052"
+            timestampString = "532000660.846646"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "241"
@@ -2362,13 +2362,29 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Parlor/PictureTimeView.swift"
-            timestampString = "530756716.23192"
+            timestampString = "530773907.066666"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "90"
             endingLineNumber = "90"
             landmarkName = "setStarIcon(selected:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Parlor/UpgradeView.swift"
+            timestampString = "531971873.178789"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
