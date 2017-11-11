@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ziU-oG-owb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ziU-oG-owb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -17,15 +17,6 @@
         <!--Clients-->
         <scene sceneID="4AB-gc-XS9">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KTC-C4-f12" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="Gic-RT-EUo">
-                    <connections>
-                        <outlet property="delegate" destination="ziU-oG-owb" id="a7M-Lb-hAB"/>
-                        <outlet property="searchContentsController" destination="ziU-oG-owb" id="RrY-Xe-W4V"/>
-                        <outlet property="searchResultsDataSource" destination="ziU-oG-owb" id="BLU-vS-sBv"/>
-                        <outlet property="searchResultsDelegate" destination="ziU-oG-owb" id="VJh-LV-EnB"/>
-                    </connections>
-                </searchDisplayController>
                 <tableViewController storyboardIdentifier="idClientsView" id="ziU-oG-owb" customClass="ClientsView" customModule="Parlor" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="78" sectionHeaderHeight="28" sectionFooterHeight="28" id="wtp-iS-dcW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -56,7 +47,11 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Clients" id="c0l-2V-lTL">
-                        <barButtonItem key="leftBarButtonItem" id="uoJ-4t-eqB"/>
+                        <barButtonItem key="leftBarButtonItem" id="uoJ-4t-eqB">
+                            <connections>
+                                <action selector="importClick:" destination="ziU-oG-owb" id="k0w-VU-BaX"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="1d2-M4-JZb">
                             <connections>
                                 <segue destination="Jzp-1Y-k6F" kind="show" identifier="newClientSegue" id="wsI-Ic-Z5D"/>
@@ -75,6 +70,15 @@
                         <segue destination="mwm-fM-YI3" kind="show" identifier="clientDetailsSegue" id="TVX-aX-8z0"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KTC-C4-f12" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="Gic-RT-EUo">
+                    <connections>
+                        <outlet property="delegate" destination="ziU-oG-owb" id="a7M-Lb-hAB"/>
+                        <outlet property="searchContentsController" destination="ziU-oG-owb" id="RrY-Xe-W4V"/>
+                        <outlet property="searchResultsDataSource" destination="ziU-oG-owb" id="BLU-vS-sBv"/>
+                        <outlet property="searchResultsDelegate" destination="ziU-oG-owb" id="VJh-LV-EnB"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="2044" y="-796.55172413793105"/>
         </scene>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cdu-h2-G3J">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cdu-h2-G3J">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -187,7 +187,7 @@
                                 <rect key="frame" x="0.0" y="482" width="375" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4H3-HP-5zV" id="qAD-x3-NfC">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="74.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="74.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -205,7 +205,11 @@
                                     <segue destination="k27-ew-ekf" kind="show" identifier="editClientSegue" id="xz1-vy-eYB"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem id="m7V-F2-x6b"/>
+                            <barButtonItem id="m7V-F2-x6b">
+                                <connections>
+                                    <segue destination="atB-vL-dlz" kind="presentation" identifier="remindersSegue" id="p1t-El-yZX"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
@@ -224,7 +228,6 @@
                         <outlet property="labelClientAggregate" destination="zhR-A0-c2T" id="9Qo-WX-6gx"/>
                         <outlet property="line" destination="31A-Ud-7kU" id="aAd-gv-WcN"/>
                         <segue destination="x5a-N5-Rfo" kind="show" identifier="pictureTimeSegue" id="S1p-Bx-7mW"/>
-                        <segue destination="atB-vL-dlz" kind="presentation" identifier="remindersSegue" modalTransitionStyle="crossDissolve" id="7pc-ID-gDv"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xXl-6S-404" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -247,13 +250,13 @@
             </objects>
             <point key="canvasLocation" x="3158" y="94"/>
         </scene>
-        <!--HaircutDetail-->
+        <!--Reminders-->
         <scene sceneID="EFr-za-dCs">
             <objects>
-                <viewControllerPlaceholder storyboardName="HaircutDetail" id="atB-vL-dlz" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Reminders" id="atB-vL-dlz" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="thx-LU-UgX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3157" y="-98"/>
+            <point key="canvasLocation" x="3158" y="-122"/>
         </scene>
     </scenes>
     <resources>

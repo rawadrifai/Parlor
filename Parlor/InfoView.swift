@@ -174,7 +174,7 @@ class InfoView: UITableViewController {
                     
                 } else {
                     
-                    self.composeEmail(email: "contact@prossimostylist.com")
+                    self.composeEmail(email: "contact@prlr.io")
                     
                 }
             })
@@ -192,15 +192,17 @@ class InfoView: UITableViewController {
         
         var height:CGFloat = 70.0;
 
-        if StoreManager.shared.isSubscriptionActive() || isSubscriptionPro {
-            
+        // rawad: uncomment this
+        
+    //    if StoreManager.shared.isSubscriptionActive() || isSubscriptionPro {
+
             if indexPath.section == self.upgradeSectionIndex && indexPath.row == upgradeRowIndex
             {
                 height = 0.0;
             } else {
                 height = 70.0;
             }
-        }
+  //      }
         
         return height
     }

@@ -50,8 +50,6 @@ class NewClientVC: UITableViewController, UINavigationControllerDelegate, UIImag
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
         // get reference to database
         self.ref = FIRDatabase.database().reference()
         
@@ -90,11 +88,6 @@ class NewClientVC: UITableViewController, UINavigationControllerDelegate, UIImag
                 phoneNumbers = phoneString as! String
             }
 
-            var imageData = UIImage()
-            if c.imageDataAvailable {
-                imageData = UIImage(data: c.imageData!)!
-                self.imgView.image = imageData
-            }
             
             txfName.text = fullName
             txfPhone.text = phoneNumbers
@@ -109,7 +102,7 @@ class NewClientVC: UITableViewController, UINavigationControllerDelegate, UIImag
         if (self.imgView.image != nil) {
             self.imgView.contentMode = .scaleAspectFill
             self.imgView.layer.masksToBounds = true
-        }
+        } 
             // if there's no image (small camera icon, we want it to be center)
         else {
             self.imgView.contentMode = .center
@@ -300,17 +293,22 @@ class NewClientVC: UITableViewController, UINavigationControllerDelegate, UIImag
             CleverTapManager.shared.registerEvent(eventName: "Client Added")
             
             
-            if !StoreManager.shared.isSubscriptionActive() {
-                
-                let clientsLeft = self.trialClientsLimit - numberOfClients - 1
-                self.alertAboutClients(title: "You have " + String(clientsLeft) + " free client(s)", message: "Upgrade to Pro for UNLIMITED storage! Keep your clients at your fingertips.")
-            }
-                // if subsc is pro
-            else {
-                
-                let _ = self.navigationController?.popViewController(animated: true)
-                dismiss(animated: true, completion: nil)
-            }
+            // rawad: comment out this
+            let _ = self.navigationController?.popViewController(animated: true)
+            dismiss(animated: true, completion: nil)
+            
+            // rawad: uncomment this stuff
+//            if !StoreManager.shared.isSubscriptionActive() {
+//
+//                let clientsLeft = self.trialClientsLimit - numberOfClients - 1
+//                self.alertAboutClients(title: "You have " + String(clientsLeft) + " free client(s)", message: "Upgrade to Pro for UNLIMITED storage! Keep your clients at your fingertips.")
+//            }
+//                // if subsc is pro
+//            else {
+//
+//                let _ = self.navigationController?.popViewController(animated: true)
+//                dismiss(animated: true, completion: nil)
+//            }
             
         }
     }

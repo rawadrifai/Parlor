@@ -39,6 +39,7 @@ class ClientsView: UITableViewController, UISearchResultsUpdating {
     
     
     
+    
     var ref: FIRDatabaseReference!
     
     // search bar stuff
@@ -64,7 +65,7 @@ class ClientsView: UITableViewController, UISearchResultsUpdating {
         // get all the user related data
         getUserData()
         
-        importClicked = false
+        
         setIcons()
         
         checkIfFirstTimeUse()
@@ -105,6 +106,8 @@ class ClientsView: UITableViewController, UISearchResultsUpdating {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        importClicked = false
         
         self.checkForLatestVersion()
         
@@ -461,6 +464,7 @@ class ClientsView: UITableViewController, UISearchResultsUpdating {
     }
     
     @IBAction func importClick(_ sender: UIBarButtonItem) {
+    
         
         let entityType = CNEntityType.contacts
         let authStatus = CNContactStore.authorizationStatus(for: entityType)
@@ -505,16 +509,19 @@ extension ClientsView:NewClientDelegate {
 
 
 extension ClientsView:CNContactPickerDelegate {
-    
+
     func contactPickerDidCancel(_ picker: CNContactPickerViewController) {
         self.importClicked = false
         picker.dismiss(animated: true) {}
-        
     }
     
     func contactPicker(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
+        
         self.contactToImport = contact
-        self.performSegue(withIdentifier: "newClientSegue", sender: self)
+        
+        picker.dismiss(animated:true) {
+            self.performSegue(withIdentifier: "newClientSegue", sender: self)
+        }
     }
 }
 
@@ -562,8 +569,6 @@ extension ClientsView {
                         
                         self.redirectToAppStore()
                     }
-                    
-                    
                 })
             } else {
                 print("version is current")
@@ -576,10 +581,7 @@ extension ClientsView {
     func redirectToAppStore() {
         
         UIApplication.shared.openURL(URL(string: Commons.appStoreUrl)!)
-        
     }
-    
-    
     
 }
 

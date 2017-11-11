@@ -73,13 +73,15 @@ class ClientDetailView: UITableViewController, UINavigationControllerDelegate, U
         
         
         makeUIChanges()
-        resizeProfilePic()
         
         // get the original CGRect for the line
         originalLinePosition = line.frame
         
         fillData()
         setAggregates()
+        
+        resizeProfilePic()
+
         
 
     }
@@ -155,7 +157,7 @@ class ClientDetailView: UITableViewController, UINavigationControllerDelegate, U
     func resizeProfilePic() {
         
         // if there's an image
-        if (self.imgView.image != nil) {
+        if (self.client.profileImg.imageUrl != "") {
             self.imgView.contentMode = .scaleAspectFill
             self.imgView.layer.masksToBounds = true
         }
@@ -350,11 +352,9 @@ class ClientDetailView: UITableViewController, UINavigationControllerDelegate, U
             self.imgView.sd_setIndicatorStyle(.gray)
             self.imgView.sd_setImage(with: URL(string: client.profileImg.imageUrl))
             self.labelChangePicture.isHidden = true
-            
-            self.resizeProfilePic()
         }
         else {
-            self.imgView.image = UIImage(imageLiteralResourceName: "icon-camera-32")
+            self.imgView.image = UIImage(imageLiteralResourceName: "white-camera")
             self.labelChangePicture.isHidden = false
         }
         
@@ -615,6 +615,8 @@ class ClientDetailView: UITableViewController, UINavigationControllerDelegate, U
                 self.ref.child(path + "/imageName").setValue(self.client.profileImg.imageName)
                 self.ref.child(path + "/imageUrl").setValue(self.client.profileImg.imageUrl)
                 
+                //self.resizeProfilePic()
+
             }
         }
     }
@@ -628,14 +630,16 @@ class ClientDetailView: UITableViewController, UINavigationControllerDelegate, U
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage
         {
             self.imgView.image = UIImage(data: image.sd_imageData()!,scale: 0)
-            self.resizeProfilePic()
-            
             self.labelChangePicture.isHidden = true
 
             let compressedImageData = UIImageJPEGRepresentation(self.imgView.image!, 0)
             
             uploadImageToFirebase(data: compressedImageData!, path: "users/" + self.userId + "/clients/" + self.client.clientId + "/profile/", fileName: UUID().uuidString)
             
+            // make picture aspect fill
+            self.imgView.contentMode = .scaleAspectFill
+            self.imgView.layer.masksToBounds = true
+
         }
         
         

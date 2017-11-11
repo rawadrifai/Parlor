@@ -48,16 +48,21 @@ class EditClientVC: UITableViewController, UINavigationControllerDelegate, UIIma
         self.txfPhone.delegate = self
         
         makeProfilePicInteractive()
-        resizeProfilePic()
         
         fillData()
-        
+        resizeProfilePic()
+
     }
     
     
     
     override func viewWillDisappear(_ animated: Bool) {
-        save()
+        
+        super.viewWillDisappear(animated)
+
+        if self.isMovingFromParentViewController {
+            save()
+        }
     }
     
     
@@ -161,11 +166,9 @@ class EditClientVC: UITableViewController, UINavigationControllerDelegate, UIIma
             self.imgView.sd_setIndicatorStyle(.gray)
             self.imgView.sd_setImage(with: URL(string: client.profileImg.imageUrl))
             self.labelChangePicture.isHidden = true
-            
-            self.resizeProfilePic()
         }
         else {
-            self.imgView.image = UIImage(imageLiteralResourceName: "icon-camera-32")
+            self.imgView.image = UIImage(imageLiteralResourceName: "white-camera")
             self.labelChangePicture.isHidden = false
         }
     }
